@@ -1,0 +1,561 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="MouseManager,alternativa.gui.mouse.MouseManager,_enabled,oldOvered,overed,overedTree,pressCoords,pressed,altKey,ctrlKey,enabled,objectsUnderCursor,shiftKey,addHintListener,addMouseCoordListener,addMouseWheelListener,hideHint,init,removeHintListener,removeMouseCoordListener,removeMouseWheelListener,setHintImaging,showHint,update,updateHint" name="keywords">
+<title>alternativa.gui.mouse.MouseManager</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'MouseManager - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/gui/mouse/MouseManager.html&amp;alternativa/gui/mouse/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;MouseManager</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class MouseManager"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.gui.mouse</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class MouseManager</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">MouseManager <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> flash.display.Sprite</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.gui.mouse:MouseManager-->MouseManager class monitors mouse actions: mouseclick, mouseover, drag'n'drop, change the mouse cursor.  <p>If GUIObject has listener of MouseEvent.CLICK event, then MouseManager will call it. If you need to use browse() method of FileReference class, then you must add event listener to the stage and monitor the mouse clicks. Or put Sprite  into the object and add event listener to it.<!--translator-end:alternativa.gui.mouse:MouseManager--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#altKey">altKey</a> : Boolean<div class="summaryTableDescription">[static] [read-only] </div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ctrlKey">ctrlKey</a> : Boolean<div class="summaryTableDescription">[static] [read-only] </div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#enabled">enabled</a> : Boolean<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/enabled/get-short-->MouseManager on/off.<!--translator-end:alternativa.gui.mouse:MouseManager/enabled/get-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#objectsUnderCursor">objectsUnderCursor</a> : Array<div class="summaryTableDescription">[static] [read-only] <!--translator-start:alternativa.gui.mouse:MouseManager/objectsUnderCursor/get-short-->Objects under cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/objectsUnderCursor/get-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#oldOvered">oldOvered</a> : DisplayObject<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:oldOvered-short-->From this object the cursor was moved (to overed).<!--translator-end:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:oldOvered-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#overed">overed</a> : DisplayObject<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/overed-short-->Object over cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/overed-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#overedTree">overedTree</a> : Array<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:overedTree-short-->Object hierarchy<!--translator-end:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:overedTree-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pressCoords">pressCoords</a> : Point<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/pressCoords-short-->Cursor coordinates on click.<!--translator-end:alternativa.gui.mouse:MouseManager/pressCoords-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#pressed">pressed</a> : DisplayObject<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.mouse:MouseManager/pressed-short-->Pressed object.<!--translator-end:alternativa.gui.mouse:MouseManager/pressed-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#shiftKey">shiftKey</a> : Boolean<div class="summaryTableDescription">[static] [read-only] </div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_enabled">_enabled</a> : Boolean = true<div class="summaryTableDescription">[static] </div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#MouseManager()">MouseManager</a>()</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addHintListener()">addHintListener</a>(eventType:String, eventHandler:Function):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/addHintListener-short-->Add hint listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addHintListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addMouseCoordListener()">addMouseCoordListener</a>(listener:<a href="IMouseCoordListener.html">IMouseCoordListener</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/addMouseCoordListener-short-->Add mouse coordinates listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addMouseCoordListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addMouseWheelListener()">addMouseWheelListener</a>(listener:<a href="IMouseWheelListener.html">IMouseWheelListener</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/addMouseWheelListener-short-->Add mouse wheel listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addMouseWheelListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#hideHint()">hideHint</a>(forced:Boolean = false):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/hideHint-short-->Hide hint.<!--translator-end:alternativa.gui.mouse:MouseManager/hideHint-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>(stage:Stage):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/init-short-->Initialisation.<!--translator-end:alternativa.gui.mouse:MouseManager/init-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeHintListener()">removeHintListener</a>(eventType:String, eventHandler:Function):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/removeHintListener-short-->Remove hint listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeHintListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeMouseCoordListener()">removeMouseCoordListener</a>(listener:<a href="IMouseCoordListener.html">IMouseCoordListener</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/removeMouseCoordListener-short-->Remove mouse coordinates listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeMouseCoordListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeMouseWheelListener()">removeMouseWheelListener</a>(listener:<a href="IMouseWheelListener.html">IMouseWheelListener</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/removeMouseWheelListener-short-->Remove mouse wheel listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeMouseWheelListener-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setHintImaging()">setHintImaging</a>(container:DisplayObjectContainer, hint:<a href="IHint.html">IHint</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/setHintImaging-short-->
+   
+   <!--translator-end:alternativa.gui.mouse:MouseManager/setHintImaging-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#showHint()">showHint</a>(text:String, object:DisplayObject = null, hideByTimeout:Boolean = true, hideByKeyPress:Boolean = false, hideByMouseClick:Boolean = true):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/showHint-short-->Show hint.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>():void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/update-short-->Update object list under cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/update-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#updateHint()">updateHint</a>(text:String):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.mouse:MouseManager/updateHint-short-->Update hint.<!--translator-end:alternativa.gui.mouse:MouseManager/updateHint-short--></div>
+</td><td class="summaryTableOwnerCol">MouseManager</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="altKey"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">altKey</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>altKey:Boolean</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get altKey():Boolean</code>
+<br>
+</div>
+<a name="ctrlKey"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ctrlKey</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>ctrlKey:Boolean</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get ctrlKey():Boolean</code>
+<br>
+</div>
+<a name="_enabled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_enabled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected static var _enabled:Boolean = true</code>
+</div>
+<a name="enabled"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">enabled</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>enabled:Boolean</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.mouse:MouseManager/enabled/get-->MouseManager on/off.<!--translator-end:alternativa.gui.mouse:MouseManager/enabled/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get enabled():Boolean</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set enabled(value:Boolean):void</code>
+<br>
+</div>
+<a name="objectsUnderCursor"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">objectsUnderCursor</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>objectsUnderCursor:Array</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.gui.mouse:MouseManager/objectsUnderCursor/get-->Objects under cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/objectsUnderCursor/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get objectsUnderCursor():Array</code>
+<br>
+</div>
+<a name="oldOvered"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">oldOvered</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var oldOvered:DisplayObject</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:oldOvered-->From this object the cursor was moved (to overed).<!--translator-end:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:oldOvered--></p></div>
+<a name="overed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">overed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var overed:DisplayObject</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/overed-->Object over cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/overed--></p></div>
+<a name="overedTree"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">overedTree</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var overedTree:Array</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:overedTree-->Object hierarchy<!--translator-end:alternativa.gui.mouse:MouseManager/alternativa.gui.mouse:overedTree--></p></div>
+<a name="pressCoords"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pressCoords</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var pressCoords:Point</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/pressCoords-->Cursor coordinates on click.<!--translator-end:alternativa.gui.mouse:MouseManager/pressCoords--></p></div>
+<a name="pressed"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">pressed</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var pressed:DisplayObject</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/pressed-->Pressed object.<!--translator-end:alternativa.gui.mouse:MouseManager/pressed--></p></div>
+<a name="shiftKey"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">shiftKey</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>shiftKey:Boolean</code>&nbsp;&nbsp;[read-only]<span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get shiftKey():Boolean</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="MouseManager()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MouseManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function MouseManager()</code>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addHintListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addHintListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addHintListener(eventType:String, eventHandler:Function):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/addHintListener-->Add hint listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addHintListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">eventType</span>:String</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/addHintListener/eventType-->Hint type.<!--translator-end:alternativa.gui.mouse:MouseManager/addHintListener/eventType--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">eventHandler</span>:Function</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/addHintListener/eventHandler-->Method, which are called on event receiving.<!--translator-end:alternativa.gui.mouse:MouseManager/addHintListener/eventHandler--></td>
+</tr>
+</table>
+</div>
+<a name="addMouseCoordListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addMouseCoordListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addMouseCoordListener(listener:<a href="IMouseCoordListener.html">IMouseCoordListener</a>):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/addMouseCoordListener-->Add mouse coordinates listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addMouseCoordListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="IMouseCoordListener.html">IMouseCoordListener</a></code></td>
+</tr>
+</table>
+</div>
+<a name="addMouseWheelListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addMouseWheelListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function addMouseWheelListener(listener:<a href="IMouseWheelListener.html">IMouseWheelListener</a>):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/addMouseWheelListener-->Add mouse wheel listener.<!--translator-end:alternativa.gui.mouse:MouseManager/addMouseWheelListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="IMouseWheelListener.html">IMouseWheelListener</a></code></td>
+</tr>
+</table>
+</div>
+<a name="hideHint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">hideHint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function hideHint(forced:Boolean = false):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/hideHint-->Hide hint.<!--translator-end:alternativa.gui.mouse:MouseManager/hideHint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">forced</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/hideHint/forced-->Immediately or at the end of time.<!--translator-end:alternativa.gui.mouse:MouseManager/hideHint/forced--></td>
+</tr>
+</table>
+</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function init(stage:Stage):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/init-->Initialisation.<!--translator-end:alternativa.gui.mouse:MouseManager/init--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">stage</span>:Stage</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/init/stage-->Scene.<!--translator-end:alternativa.gui.mouse:MouseManager/init/stage--></td>
+</tr>
+</table>
+</div>
+<a name="removeHintListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeHintListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeHintListener(eventType:String, eventHandler:Function):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/removeHintListener-->Remove hint listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeHintListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">eventType</span>:String</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/removeHintListener/eventType-->Hint type.<!--translator-end:alternativa.gui.mouse:MouseManager/removeHintListener/eventType--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">eventHandler</span>:Function</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/removeHintListener/eventHandler-->Method, which are called on event receiving.<!--translator-end:alternativa.gui.mouse:MouseManager/removeHintListener/eventHandler--></td>
+</tr>
+</table>
+</div>
+<a name="removeMouseCoordListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeMouseCoordListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeMouseCoordListener(listener:<a href="IMouseCoordListener.html">IMouseCoordListener</a>):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/removeMouseCoordListener-->Remove mouse coordinates listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeMouseCoordListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="IMouseCoordListener.html">IMouseCoordListener</a></code></td>
+</tr>
+</table>
+</div>
+<a name="removeMouseWheelListener()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeMouseWheelListener</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function removeMouseWheelListener(listener:<a href="IMouseWheelListener.html">IMouseWheelListener</a>):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/removeMouseWheelListener-->Remove mouse wheel listener.<!--translator-end:alternativa.gui.mouse:MouseManager/removeMouseWheelListener--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">listener</span>:<a href="IMouseWheelListener.html">IMouseWheelListener</a></code></td>
+</tr>
+</table>
+</div>
+<a name="setHintImaging()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setHintImaging</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function setHintImaging(container:DisplayObjectContainer, hint:<a href="IHint.html">IHint</a>):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/setHintImaging-->
+   
+   <!--translator-end:alternativa.gui.mouse:MouseManager/setHintImaging--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">container</span>:DisplayObjectContainer</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/setHintImaging/container-->Hint container. It is impossible to add interface elements.<!--translator-end:alternativa.gui.mouse:MouseManager/setHintImaging/container--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hint</span>:<a href="IHint.html">IHint</a></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/setHintImaging/hint-->Hint image.<!--translator-end:alternativa.gui.mouse:MouseManager/setHintImaging/hint--></td>
+</tr>
+</table>
+</div>
+<a name="showHint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">showHint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function showHint(text:String, object:DisplayObject = null, hideByTimeout:Boolean = true, hideByKeyPress:Boolean = false, hideByMouseClick:Boolean = true):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/showHint-->Show hint.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">text</span>:String</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/showHint/text-->Hint text.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint/text--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:DisplayObject</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/showHint/object-->Object, which hint show.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint/object--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hideByTimeout</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/showHint/hideByTimeout-->Hide hint by timeout.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint/hideByTimeout--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hideByKeyPress</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/showHint/hideByKeyPress-->Hide hint when key pressed.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint/hideByKeyPress--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">hideByMouseClick</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/showHint/hideByMouseClick-->Hide hint when mouse click.<!--translator-end:alternativa.gui.mouse:MouseManager/showHint/hideByMouseClick--></td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function update():void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/update-->Update object list under cursor.<!--translator-end:alternativa.gui.mouse:MouseManager/update--></p></div>
+<a name="updateHint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">updateHint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function updateHint(text:String):void</code><p><!--translator-start:alternativa.gui.mouse:MouseManager/updateHint-->Update hint.<!--translator-end:alternativa.gui.mouse:MouseManager/updateHint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">text</span>:String</code> &mdash; <!--translator-start:alternativa.gui.mouse:MouseManager/updateHint/text-->Hint text.<!--translator-end:alternativa.gui.mouse:MouseManager/updateHint/text--></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

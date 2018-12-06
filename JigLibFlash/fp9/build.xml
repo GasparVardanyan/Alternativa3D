@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="JigLibFlash">
+	
+	<!-- To run the script on your machine update the paths below -->
+	<taskdef resource="flexTasks.tasks" classpath="c:/ASpace/sdk/ant/lib/flexTasks.jar"/>
+	<property name="FLEX_HOME" value="c:/ASpace/sdk/"/>
+	<property name="app.home" value="C:/ASpace/jiglib/fp9"/>
+	<property name="papervision3d.home" value="c:/ASpace/pv3d/"/>
+	<property name="away3d.home" value="c:/ASpace/away3d/"/>
+	<property name="sandy3d.home" value="c:/ASpace/sandy3d/"/>
+	<property name="asdoc.exe" value="c:/ASpace/sdk/bin/asdoc.exe"/>
+	<property name="compc.exe" value="c:/ASpace/sdk/bin/compc.exe"/>
+	<property name="playerglobal" value="'c:/Program Files/Adobe/Adobe Flash CS3/en/Configuration/ActionScript 3.0/Classes/playerglobal.swc'"/>
+
+	<property name="title" value="JigLibFlash FP9 API"/>
+	<property name="version" value="0.1"/>
+	<property name="outputfolder" value="docs"/>
+	<property name="classes" value="jiglib.plugin.AbstractPhysics jiglib.plugin.away3d.Away3DPhysics jiglib.plugin.sandy3d.Sandy3DPhysics jiglib.plugin.papervision3d.Papervision3DPhysics jiglib.plugin.papervision3d.constraint.MouseConstraint"/>
+	<property name="exclude-classes" value=""/>
+
+	<!-- API GENERATION -->
+	<!-- adapted from: http://www.rubenswieringa.com/blog/ant-and-asdoc -->
+	<target name="clean-docs">
+		<delete dir="${outputfolder}" failOnError="false" includeEmptyDirs="true"/>
+		<mkdir dir="${outputfolder}"/>
+	</target>
+	
+	<target name="build-docs" depends="clean-docs,build-sandy-swc,build-away-swc,build-papervision-swc" description="Generates API docs of the library">
+		<exec executable="${asdoc.exe}" failonerror="true">
+			<arg line='-doc-classes ${classes}'/>
+			<arg line='-main-title "${title} ${version}"' />
+			<arg line='-window-title "${title} ${version}"' />
+			<arg line='-output ${outputfolder}' />
+			<arg line="-compiler.source-path src/"/>
+			<arg line="-exclude-classes ${exclude-classes}"/>
+			<arg line="-external-library-path swc/sandy.swc" />
+			<arg line="-external-library-path swc/away.swc" />
+			<arg line="-external-library-path swc/pv3d.swc" />
+		</exec>
+		<antcall target="clean-swc"/>
+	</target>
+	
+	<!-- SWC generation -->
+	<target name="build-sandy-swc" description="Generates a SWC of the Sandy lib">
+			<echo>Generating Sandy swc</echo>
+			<exec executable="${compc.exe}">
+				<arg line="-source-path ${sandy3d.home}"/>
+				<arg line="-output swc/sandy.swc"/>
+				<arg line="-include-sources ${sandy3d.home}"/>
+				<arg line="-strict=false"/>
+				<arg line="-warnings=false"/>
+			</exec>
+	</target>
+	
+	<target name="build-away-swc" description="Generates a SWC of the Away3d lib">
+			<echo>Generating Away3d swc</echo>
+			<exec executable="${compc.exe}">
+				<arg line="-source-path ${away3d.home}"/>
+				<arg line="-output swc/away.swc"/>
+				<arg line="-include-sources ${away3d.home}"/>
+				<arg line="-strict=false"/>
+				<arg line="-warnings=false"/>
+				<arg line="-externs away3d.core.draw.PrimitiveVolumeBlock"/>
+			</exec>
+	</target>
+	
+	<target name="build-papervision-swc" description="Generates a SWC of the Papervision3d lib">
+			<echo>Generating Papervision3d swc</echo>
+			<exec executable="${compc.exe}">
+				<arg line="-source-path ${papervision3d.home}"/>
+				<arg line="-output swc/pv3d.swc"/>
+				<arg line="-include-sources ${papervision3d.home}"/>
+				<arg line="-strict=false"/>
+				<arg line="-warnings=false"/>
+			</exec>
+	</target>
+	
+	<target name="build-swc" description="Generates a SWC of the library" depends="build-sandy-swc,build-away-swc,build-papervision-swc">
+		<echo>Generating swc using ${app.home}/src</echo>
+		<exec executable="${compc.exe}">
+			<arg line="-source-path ${app.home}/src ${sandy3d.home} ${away3d.home} ${papervision3d.home}"/>
+			<arg line="-output swc/jiglibflash.swc"/>
+			<arg line="-include-sources ${app.home}/src"/>
+			<arg line="-external-library-path ${playerglobal}" />
+			<arg line="-external-library-path swc/sandy.swc" />
+			<arg line="-external-library-path swc/away.swc" />
+			<arg line="-external-library-path swc/pv3d.swc" />
+		</exec>
+		<antcall target="clean-swc"/>
+	</target>
+	
+	<target name="clean-swc" description="Deletes SWC we do not need anymore">
+		<delete file="swc/sandy.swc"/>
+		<delete file="swc/away.swc"/>
+		<delete file="swc/pv3d.swc"/>
+	</target>
+</project>

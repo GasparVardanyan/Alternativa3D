@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>muzer</author>
+      <authoring_tool>Maya8.5 | ColladaMaya v3.05B</authoring_tool>
+      <comments>ColladaMaya export options: bakeTransforms=1;exportPolygonMeshes=1;bakeLighting=0;isSampling=0;
+curveConstrainSampling=0;removeStaticCurves=1;exportCameraAsLookat=0;
+exportLights=0;exportCameras=0;exportJointsAndSkin=1;
+exportAnimations=0;exportTriangles=1;exportInvisibleNodes=0;
+exportNormals=0;exportTexCoords=1;
+exportVertexColors=0;exportVertexColorsAnimation=0;exportTangents=0;
+exportTexTangents=0;exportConstraints=0;exportPhysics=0;exportXRefs=1;
+dereferenceXRefs=0;cameraXFov=0;cameraYFov=1</comments>
+     </contributor>
+    <created>2009-04-11T07:08:34Z</created>
+    <modified>2010-03-02T09:46:10Z</modified>
+    <unit meter="0.01" name="centimeter"/>
+    <up_axis>Y_UP</up_axis>
+  </asset>
+  <library_materials>
+    <material id="ColorMaterial_06860600" name="ColorMaterial_06860600">
+      <instance_effect url="#ColorMaterial_06860600-fx"/>
+    </material>
+    <material id="ColorMaterial_E3989800" name="ColorMaterial_E3989800">
+      <instance_effect url="#ColorMaterial_E3989800-fx"/>
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="ColorMaterial_06860600-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.023529 0.52549 0.023529 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.023529 0.52549 0.023529 1</color>
+            </diffuse>
+            <specular>
+              <color>0.2 0.2 0.2 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="ColorMaterial_E3989800-fx">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0.890196 0.596078 0.596078 1</color>
+            </ambient>
+            <diffuse>
+              <color>0.890196 0.596078 0.596078 1</color>
+            </diffuse>
+            <specular>
+              <color>0.2 0.2 0.2 1</color>
+            </specular>
+            <shininess>
+              <float>10</float>
+            </shininess>
+            <reflective>
+              <color>0 0 0 1</color>
+            </reflective>
+            <reflectivity>
+              <float>1</float>
+            </reflectivity>
+            <transparent opaque="RGB_ZERO">
+              <color>0 0 0 1</color>
+            </transparent>
+            <transparency>
+              <float>1</float>
+            </transparency>
+          </phong>
+          <extra>
+            <technique profile="FCOLLADA"/>
+          </extra>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="Chassis-mesh" name="Chassis">
+      <mesh>
+        <source id="Chassis-mesh-positions" name="position">
+          <float_array id="Chassis-mesh-positions-array" count="54">-50.8 -20.2955 56.9565 50.8 -20.2955 56.9565 -48.9072 -15.2724 -120.844 48.9072 -15.2724 -120.844 -50.8 17.8045 68.6672 50.8 17.8045 68.6672 -48.9072 12.7813 -120.844 48.9072 12.7813 -120.844 50.8 17.8045 -68.0085 -50.8 17.8045 -67.6595 -42.9118 51.9844 53.0348 42.9118 51.9844 53.0348 42.9118 51.9844 -33.6446 -42.9118 51.9844 -33.4015 -47.5778 -16.5773 112.499 47.5778 -16.5773 112.499 47.5778 14.0862 112.499 -47.5778 14.0862 112.499</float_array>
+          <technique_common>
+            <accessor source="#Chassis-mesh-positions-array" count="18" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Chassis-mesh-map1" name="map1">
+          <float_array id="Chassis-mesh-map1-array" count="64">1 0 0 0 1 1 0 1 0 1 1 1 0 1 1 1 0 0 1 0 0 1 1 1 0 0 1 0 0 1 1 1 0 0 1 0 0 1 1 1 1 0.655192 0.655192 1 0 0.65323 0.34677 1 0 0 1 0 1 0.655192 0 0.65323 0 0 1 0 1 1 0 1</float_array>
+          <technique_common>
+            <accessor source="#Chassis-mesh-map1-array" count="32" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Chassis-mesh-vertices">
+          <input semantic="POSITION" source="#Chassis-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_E3989800SG" count="32">
+          <input semantic="VERTEX" source="#Chassis-mesh-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#Chassis-mesh-map1" offset="1" set="0"/>
+          <p>0 0 2 2 3 3 3 3 1 1 0 0 11 25 12 26 13 27 13 27 10 24 11 25 14 28 15 29 16 30 16 30 17 31 14 28 1 8 3 9 7 11 1 8 7 11 8 21 1 8 8 21 5 10 3 12 2 13 6 15 6 15 7 14 3 12 2 16 0 17 4 19 2 16 4 19 9 23 2 16 9 23 6 18 7 5 6 4 9 22 9 22 8 20 7 5 4 6 5 7 11 25 11 25 10 24 4 6 5 10 8 21 12 26 12 26 11 25 5 10 8 20 9 22 13 27 13 27 12 26 8 20 9 23 4 19 10 24 10 24 13 27 9 23 0 0 1 1 15 29 15 29 14 28 0 0 1 8 5 10 16 30 16 30 15 29 1 8 5 7 4 6 17 31 17 31 16 30 5 7 4 19 0 17 14 28 14 28 17 31 4 19</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="WheelBL-mesh" name="WheelBL">
+      <mesh>
+        <source id="WheelBL-mesh-positions" name="position">
+          <float_array id="WheelBL-mesh-positions-array" count="60">7.62 0 20.32 7.62 11.9438 16.4392 7.62 19.3255 6.27924 7.62 19.3255 -6.27924 7.62 11.9438 -16.4392 7.62 0 -20.32 7.62 -11.9438 -16.4392 7.62 -19.3255 -6.27924 7.62 -19.3255 6.27924 7.62 -11.9438 16.4392 -7.62 0 20.32 -7.62 11.9438 16.4392 -7.62 19.3255 6.27924 -7.62 19.3255 -6.27924 -7.62 11.9438 -16.4392 -7.62 0 -20.32 -7.62 -11.9438 -16.4392 -7.62 -19.3255 -6.27924 -7.62 -19.3255 6.27924 -7.62 -11.9438 16.4392</float_array>
+          <technique_common>
+            <accessor source="#WheelBL-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="WheelBL-mesh-map1" name="map1">
+          <float_array id="WheelBL-mesh-map1-array" count="84">0.75 0 0.85 0 0.95 0 0.05 0 0.15 0 0.25 0 0.35 0 0.45 0 0.55 0 0.65 0 0.75 1 0.85 1 0.95 1 0.05 1 0.15 1 0.25 1 0.35 1 0.45 1 0.55 1 0.65 1 1.05 0 1.05 1 0.793893 0.904509 0.975528 0.654509 0.975528 0.345492 0.793893 0.095491 0.5 0 0.206107 0.095491 0.024471 0.345491 0.024471 0.654508 0.206107 0.904508 0.5 1 0.5 1 0.206107 0.904508 0.024471 0.654508 0.024471 0.345491 0.206107 0.095491 0.5 0 0.793893 0.095491 0.975528 0.345492 0.975528 0.654509 0.793893 0.904509</float_array>
+          <technique_common>
+            <accessor source="#WheelBL-mesh-map1-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="WheelBL-mesh-vertices">
+          <input semantic="POSITION" source="#WheelBL-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_06860600SG" count="36">
+          <input semantic="VERTEX" source="#WheelBL-mesh-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#WheelBL-mesh-map1" offset="1" set="0"/>
+          <p>0 0 1 1 11 11 11 11 10 10 0 0 1 1 2 2 12 12 12 12 11 11 1 1 2 2 3 20 13 21 13 21 12 12 2 2 3 3 4 4 14 14 14 14 13 13 3 3 4 4 5 5 15 15 15 15 14 14 4 4 5 5 6 6 16 16 16 16 15 15 5 5 6 6 7 7 17 17 17 17 16 16 6 6 7 7 8 8 18 18 18 18 17 17 7 7 8 8 9 9 19 19 19 19 18 18 8 8 9 9 0 0 10 10 10 10 19 19 9 9 8 23 7 24 6 25 6 25 5 26 4 27 4 27 3 28 2 29 2 29 1 30 0 31 4 27 2 29 0 31 6 25 4 27 0 31 8 23 6 25 0 31 9 22 8 23 0 31 11 33 12 34 13 35 13 35 14 36 15 37 15 37 16 38 17 39 17 39 18 40 19 41 15 37 17 39 19 41 13 35 15 37 19 41 11 33 13 35 19 41 10 32 11 33 19 41</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="WheelBR-mesh" name="WheelBR">
+      <mesh>
+        <source id="WheelBR-mesh-positions" name="position">
+          <float_array id="WheelBR-mesh-positions-array" count="60">7.62 0 20.32 7.62 11.9438 16.4392 7.62 19.3255 6.27924 7.62 19.3255 -6.27924 7.62 11.9438 -16.4392 7.62 0 -20.32 7.62 -11.9438 -16.4392 7.62 -19.3255 -6.27924 7.62 -19.3255 6.27924 7.62 -11.9438 16.4392 -7.62 0 20.32 -7.62 11.9438 16.4392 -7.62 19.3255 6.27924 -7.62 19.3255 -6.27924 -7.62 11.9438 -16.4392 -7.62 0 -20.32 -7.62 -11.9438 -16.4392 -7.62 -19.3255 -6.27924 -7.62 -19.3255 6.27924 -7.62 -11.9438 16.4392</float_array>
+          <technique_common>
+            <accessor source="#WheelBR-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="WheelBR-mesh-map1" name="map1">
+          <float_array id="WheelBR-mesh-map1-array" count="84">0.75 0 0.85 0 0.95 0 0.05 0 0.15 0 0.25 0 0.35 0 0.45 0 0.55 0 0.65 0 0.75 1 0.85 1 0.95 1 0.05 1 0.15 1 0.25 1 0.35 1 0.45 1 0.55 1 0.65 1 1.05 0 1.05 1 0.793893 0.904509 0.975528 0.654509 0.975528 0.345492 0.793893 0.095491 0.5 0 0.206107 0.095491 0.024471 0.345491 0.024471 0.654508 0.206107 0.904508 0.5 1 0.5 1 0.206107 0.904508 0.024471 0.654508 0.024471 0.345491 0.206107 0.095491 0.5 0 0.793893 0.095491 0.975528 0.345492 0.975528 0.654509 0.793893 0.904509</float_array>
+          <technique_common>
+            <accessor source="#WheelBR-mesh-map1-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="WheelBR-mesh-vertices">
+          <input semantic="POSITION" source="#WheelBR-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_06860600SG" count="36">
+          <input semantic="VERTEX" source="#WheelBR-mesh-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#WheelBR-mesh-map1" offset="1" set="0"/>
+          <p>0 0 1 1 11 11 11 11 10 10 0 0 1 1 2 2 12 12 12 12 11 11 1 1 2 2 3 20 13 21 13 21 12 12 2 2 3 3 4 4 14 14 14 14 13 13 3 3 4 4 5 5 15 15 15 15 14 14 4 4 5 5 6 6 16 16 16 16 15 15 5 5 6 6 7 7 17 17 17 17 16 16 6 6 7 7 8 8 18 18 18 18 17 17 7 7 8 8 9 9 19 19 19 19 18 18 8 8 9 9 0 0 10 10 10 10 19 19 9 9 8 23 7 24 6 25 6 25 5 26 4 27 4 27 3 28 2 29 2 29 1 30 0 31 4 27 2 29 0 31 6 25 4 27 0 31 8 23 6 25 0 31 9 22 8 23 0 31 11 33 12 34 13 35 13 35 14 36 15 37 15 37 16 38 17 39 17 39 18 40 19 41 15 37 17 39 19 41 13 35 15 37 19 41 11 33 13 35 19 41 10 32 11 33 19 41</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="WheelFR-mesh" name="WheelFR">
+      <mesh>
+        <source id="WheelFR-mesh-positions" name="position">
+          <float_array id="WheelFR-mesh-positions-array" count="60">-7.75523 0 -20.2688 -7.72937 11.9438 -16.3881 -7.66168 19.3255 -6.22831 -7.57799 19.3255 6.32986 -7.5103 11.9438 16.4896 -7.48444 0 20.3703 -7.5103 -11.9438 16.4896 -7.57799 -19.3255 6.32986 -7.66168 -19.3255 -6.22831 -7.72937 -11.9438 -16.3881 7.48444 0 -20.3703 7.5103 11.9438 -16.4896 7.57799 19.3255 -6.32986 7.66168 19.3255 6.22831 7.72937 11.9438 16.3881 7.75523 0 20.2688 7.72937 -11.9438 16.3881 7.66168 -19.3255 6.22831 7.57799 -19.3255 -6.32986 7.5103 -11.9438 -16.4896</float_array>
+          <technique_common>
+            <accessor source="#WheelFR-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="WheelFR-mesh-map1" name="map1">
+          <float_array id="WheelFR-mesh-map1-array" count="84">0.75 0 0.85 0 0.95 0 0.05 0 0.15 0 0.25 0 0.35 0 0.45 0 0.55 0 0.65 0 0.75 1 0.85 1 0.95 1 0.05 1 0.15 1 0.25 1 0.35 1 0.45 1 0.55 1 0.65 1 1.05 0 1.05 1 0.793893 0.904509 0.975528 0.654509 0.975528 0.345492 0.793893 0.095491 0.5 0 0.206107 0.095491 0.024471 0.345491 0.024471 0.654508 0.206107 0.904508 0.5 1 0.5 1 0.206107 0.904508 0.024471 0.654508 0.024471 0.345491 0.206107 0.095491 0.5 0 0.793893 0.095491 0.975528 0.345492 0.975528 0.654509 0.793893 0.904509</float_array>
+          <technique_common>
+            <accessor source="#WheelFR-mesh-map1-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="WheelFR-mesh-vertices">
+          <input semantic="POSITION" source="#WheelFR-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_06860600SG" count="36">
+          <input semantic="VERTEX" source="#WheelFR-mesh-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#WheelFR-mesh-map1" offset="1" set="0"/>
+          <p>0 0 1 1 11 11 11 11 10 10 0 0 1 1 2 2 12 12 12 12 11 11 1 1 2 2 3 20 13 21 13 21 12 12 2 2 3 3 4 4 14 14 14 14 13 13 3 3 4 4 5 5 15 15 15 15 14 14 4 4 5 5 6 6 16 16 16 16 15 15 5 5 6 6 7 7 17 17 17 17 16 16 6 6 7 7 8 8 18 18 18 18 17 17 7 7 8 8 9 9 19 19 19 19 18 18 8 8 9 9 0 0 10 10 10 10 19 19 9 9 8 23 7 24 6 25 6 25 5 26 4 27 4 27 3 28 2 29 2 29 1 30 0 31 4 27 2 29 0 31 6 25 4 27 0 31 8 23 6 25 0 31 9 22 8 23 0 31 11 33 12 34 13 35 13 35 14 36 15 37 15 37 16 38 17 39 17 39 18 40 19 41 15 37 17 39 19 41 13 35 15 37 19 41 11 33 13 35 19 41 10 32 11 33 19 41</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+    <geometry id="WheelFL-mesh" name="WheelFL">
+      <mesh>
+        <source id="WheelFL-mesh-positions" name="position">
+          <float_array id="WheelFL-mesh-positions-array" count="60">-7.62 0 -20.32 -7.62 11.9438 -16.4392 -7.62 19.3255 -6.27924 -7.62 19.3255 6.27924 -7.62 11.9438 16.4392 -7.62 0 20.32 -7.62 -11.9438 16.4392 -7.62 -19.3255 6.27924 -7.62 -19.3255 -6.27924 -7.62 -11.9438 -16.4392 7.62 0 -20.32 7.62 11.9438 -16.4392 7.62 19.3255 -6.27924 7.62 19.3255 6.27924 7.62 11.9438 16.4392 7.62 0 20.32 7.62 -11.9438 16.4392 7.62 -19.3255 6.27924 7.62 -19.3255 -6.27924 7.62 -11.9438 -16.4392</float_array>
+          <technique_common>
+            <accessor source="#WheelFL-mesh-positions-array" count="20" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="WheelFL-mesh-map1" name="map1">
+          <float_array id="WheelFL-mesh-map1-array" count="84">0.75 0 0.85 0 0.95 0 0.05 0 0.15 0 0.25 0 0.35 0 0.45 0 0.55 0 0.65 0 0.75 1 0.85 1 0.95 1 0.05 1 0.15 1 0.25 1 0.35 1 0.45 1 0.55 1 0.65 1 1.05 0 1.05 1 0.793893 0.904509 0.975528 0.654509 0.975528 0.345492 0.793893 0.095491 0.5 0 0.206107 0.095491 0.024471 0.345491 0.024471 0.654508 0.206107 0.904508 0.5 1 0.5 1 0.206107 0.904508 0.024471 0.654508 0.024471 0.345491 0.206107 0.095491 0.5 0 0.793893 0.095491 0.975528 0.345492 0.975528 0.654509 0.793893 0.904509</float_array>
+          <technique_common>
+            <accessor source="#WheelFL-mesh-map1-array" count="42" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="WheelFL-mesh-vertices">
+          <input semantic="POSITION" source="#WheelFL-mesh-positions"/>
+        </vertices>
+        <triangles material="ColorMaterial_06860600SG" count="36">
+          <input semantic="VERTEX" source="#WheelFL-mesh-vertices" offset="0"/>
+          <input semantic="TEXCOORD" source="#WheelFL-mesh-map1" offset="1" set="0"/>
+          <p>0 0 1 1 11 11 11 11 10 10 0 0 1 1 2 2 12 12 12 12 11 11 1 1 2 2 3 20 13 21 13 21 12 12 2 2 3 3 4 4 14 14 14 14 13 13 3 3 4 4 5 5 15 15 15 15 14 14 4 4 5 5 6 6 16 16 16 16 15 15 5 5 6 6 7 7 17 17 17 17 16 16 6 6 7 7 8 8 18 18 18 18 17 17 7 7 8 8 9 9 19 19 19 19 18 18 8 8 9 9 0 0 10 10 10 10 19 19 9 9 8 23 7 24 6 25 6 25 5 26 4 27 4 27 3 28 2 29 2 29 1 30 0 31 4 27 2 29 0 31 6 25 4 27 0 31 8 23 6 25 0 31 9 22 8 23 0 31 11 33 12 34 13 35 13 35 14 36 15 37 15 37 16 38 17 39 17 39 18 40 19 41 15 37 17 39 19 41 13 35 15 37 19 41 11 33 13 35 19 41 10 32 11 33 19 41</p>
+        </triangles>
+      </mesh>
+      <extra>
+        <technique profile="MAYA">
+          <double_sided>1</double_sided>
+        </technique>
+      </extra>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="VisualSceneNode" name="car">
+      <node id="Chassis-node" name="Chassis" type="NODE">
+        <matrix sid="transform">1 0 0 0.837184 0 1 0 0 0 0 1 0.834474 0 0 0 1</matrix>
+        <instance_geometry url="#Chassis-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial_E3989800SG" target="#ColorMaterial_E3989800"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="WheelBL-node" name="WheelBL" type="NODE">
+        <matrix sid="transform">1 0 0 -49.7568 0 1 0 -20.32 0 0 1 64.4987 0 0 0 1</matrix>
+        <instance_geometry url="#WheelBL-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial_06860600SG" target="#ColorMaterial_06860600"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="WheelBR-node" name="WheelBR" type="NODE">
+        <matrix sid="transform">1 0 0 51.8427 0 1 0 -20.32 0 0 1 64.1695 0 0 0 1</matrix>
+        <instance_geometry url="#WheelBR-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="ColorMaterial_06860600SG" target="#ColorMaterial_06860600"/>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="WheelFR-node" name="WheelFR" type="NODE">
+        <matrix sid="transform">1 0 0 50.8 0 1 0 -20.32 0 0 1 -63.312 0 0 0 1</matrix>
+        <node id="WheelFR-node_PIVOT" name="WheelFR_PIVOT" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0 -0.000124 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#WheelFR-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="ColorMaterial_06860600SG" target="#ColorMaterial_06860600"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <node id="WheelFL-node" name="WheelFL" type="NODE">
+        <matrix sid="transform">0.999995 0.001182 -0.002995 -49.7568 -0.001182 0.999999 0 -20.32 0.002995 0.000003 0.999996 -63.312 0 0 0 1</matrix>
+        <node id="WheelFL-node_PIVOT" name="WheelFL_PIVOT" type="NODE">
+          <matrix sid="transform">1 0 0 0 0 1 0.000000 0 0 0 1 0 0 0 0 1</matrix>
+          <instance_geometry url="#WheelFL-mesh">
+            <bind_material>
+              <technique_common>
+                <instance_material symbol="ColorMaterial_06860600SG" target="#ColorMaterial_06860600"/>
+              </technique_common>
+            </bind_material>
+          </instance_geometry>
+        </node>
+      </node>
+      <extra>
+        <technique profile="FCOLLADA">
+          <start_time>0.041666</start_time>
+          <end_time>2</end_time>
+        </technique>
+      </extra>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#VisualSceneNode"/>
+  </scene>
+</COLLADA>

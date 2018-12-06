@@ -1,0 +1,327 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="LODmanager,alternativa.gui.layout.LODmanager,instance,manager,LODIndex,limitsH,limitsV,add,init,remove,resize" name="keywords">
+<title>alternativa.gui.layout.LODmanager</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'LODmanager - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/gui/layout/LODmanager.html&amp;alternativa/gui/layout/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;LODmanager</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class LODmanager"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.gui.layout</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class LODmanager</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.gui.layout:LODmanager-->
+  Базовый класс LODmanager.
+  <p>Менеджер отвечает за детализацию объектов(лоды) на сцене.
+  Менеджер рассылает индекс лода всем объектам с интерфейсом ISimpleLODobject.</p>
+  <p>Номер лода(LODIndex) зависит от высоты и ширины stage, которая передается в LODmanager из LayoutManager. 
+  В зависимости от номера лода, объект может изменять скины, данные, убирать/показывать разные панели и т.д.
+  После изменения номера лода, надо делать перерисовку(вызов draw).</p>
+  <p>Для изменения границ переключения индекса можно воспользоваться сеттерами на limitsH и limitsV, которым передается массив с границами.</p>
+  <p>Также есть список LODlistenerPriority, который имеет набор приоритетов, 
+  т.е. вначале рассылается номер лода объектам имеющим низкий приоритет (SIMPLE_OBJECT), и далее уже тем, кто выше, заканчивая PANEL.</p>
+  
+  <!--translator-end:alternativa.gui.layout:LODmanager--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="DefaultLODManager.html" target="">DefaultLODManager</a>
+<br>
+<a href="ILODManager.html" target="">ILODManager</a>
+<br>
+<a href="../lod/simple/LODlistenerPriority.html" target="">alternativa.gui.lod.simple.LODlistenerPriority</a>
+<br>
+<a href="../lod/simple/ISimpleLODobject.html" target="">alternativa.gui.lod.simple.ISimpleLODobject</a>
+<br>
+<a href="../lod/simple/SimpleLODobject.html" target="">alternativa.gui.lod.simple.SimpleLODobject</a>
+<br>
+<a href="../lod/simple/SimpleLODbitmap.html" target="">alternativa.gui.lod.simple.SimpleLODbitmap</a>
+<br>
+<a href="LayoutManager.html" target="">LayoutManager</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#limitsH">limitsH</a> : Array<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.layout:LODmanager/limitsH/get-short-->
+   Границы переключения лодов по горизонтали.<!--translator-end:alternativa.gui.layout:LODmanager/limitsH/get-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#limitsV">limitsV</a> : Array<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.layout:LODmanager/limitsV/get-short-->
+   Границы переключения лодов по вертикали.<!--translator-end:alternativa.gui.layout:LODmanager/limitsV/get-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LODIndex">LODIndex</a> : int<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.layout:LODmanager/LODIndex/get-short-->
+   Принудительное переключение LODindex.<!--translator-end:alternativa.gui.layout:LODmanager/LODIndex/get-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#manager">manager</a> : <a href="../layout/ILODManager.html">ILODManager</a>
+<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.layout:LODmanager/manager-short-->
+   Кастомный менеджер LODmanager.<!--translator-end:alternativa.gui.layout:LODmanager/manager-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#instance">instance</a> : <a href="../layout/ILODManager.html">ILODManager</a>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#add()">add</a>(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.layout:LODmanager/add-short-->
+   Добавление объекта.<!--translator-end:alternativa.gui.layout:LODmanager/add-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>(_manager:<a href="ILODManager.html">ILODManager</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.layout:LODmanager/init-short-->
+   Инициализация LODmanager.<!--translator-end:alternativa.gui.layout:LODmanager/init-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.layout:LODmanager/remove-short-->
+   Удаление объекта.<!--translator-end:alternativa.gui.layout:LODmanager/remove-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#resize()">resize</a>(width:int, height:int):void</div>
+<div class="summaryTableDescription">[static]<!--translator-start:alternativa.gui.layout:LODmanager/resize-short-->
+   Изменение размеров.<!--translator-end:alternativa.gui.layout:LODmanager/resize-short--></div>
+</td><td class="summaryTableOwnerCol">LODmanager</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="instance"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">instance</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var instance:<a href="../layout/ILODManager.html">ILODManager</a></code>
+</div>
+<a name="limitsH"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">limitsH</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>limitsH:Array</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:LODmanager/limitsH/get-->
+   Границы переключения лодов по горизонтали. 
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/limitsH/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get limitsH():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set limitsH(value:Array):void</code>
+<br>
+</div>
+<a name="limitsV"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">limitsV</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>limitsV:Array</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:LODmanager/limitsV/get-->
+   Границы переключения лодов по вертикали. 
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/limitsV/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get limitsV():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set limitsV(value:Array):void</code>
+<br>
+</div>
+<a name="LODIndex"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LODIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>LODIndex:int</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:LODmanager/LODIndex/get-->
+   Принудительное переключение LODindex.
+   </p><p>Отладочная возможность.</p>
+   <!--translator-end:alternativa.gui.layout:LODmanager/LODIndex/get--><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public static function get LODIndex():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set LODIndex(value:int):void</code>
+<br>
+</div>
+<a name="manager"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">manager</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static var manager:<a href="../layout/ILODManager.html">ILODManager</a></code><p><!--translator-start:alternativa.gui.layout:LODmanager/manager-->
+   Кастомный менеджер LODmanager. 
+   <!--translator-end:alternativa.gui.layout:LODmanager/manager--></p></div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="add()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function add(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</code><p><!--translator-start:alternativa.gui.layout:LODmanager/add-->
+   Добавление объекта. 
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/add--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a></code></td>
+</tr>
+</table>
+</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function init(_manager:<a href="ILODManager.html">ILODManager</a>):void</code><p><!--translator-start:alternativa.gui.layout:LODmanager/init-->
+   Инициализация LODmanager.
+   <!--translator-end:alternativa.gui.layout:LODmanager/init--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">_manager</span>:<a href="ILODManager.html">ILODManager</a></code> &mdash; <!--translator-start:alternativa.gui.layout:LODmanager/init/_manager-->Кастомный менеджер.
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/init/_manager--></td>
+</tr>
+</table>
+</div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function remove(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</code><p><!--translator-start:alternativa.gui.layout:LODmanager/remove-->
+   Удаление объекта.
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/remove--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a></code></td>
+</tr>
+</table>
+</div>
+<a name="resize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static function resize(width:int, height:int):void</code><p><!--translator-start:alternativa.gui.layout:LODmanager/resize-->
+   Изменение размеров.
+   <!--translator-end:alternativa.gui.layout:LODmanager/resize--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> &mdash; <!--translator-start:alternativa.gui.layout:LODmanager/resize/width-->Ширина.
+   <!--translator-end:alternativa.gui.layout:LODmanager/resize/width--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> &mdash; <!--translator-start:alternativa.gui.layout:LODmanager/resize/height-->Высота.
+   
+   <!--translator-end:alternativa.gui.layout:LODmanager/resize/height--></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

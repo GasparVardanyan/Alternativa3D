@@ -1,0 +1,77 @@
+Changelog AlternativaGUI & AlternativaGUIDefaultTheme
+
+AlternativaGUI 5.21.0
+----
+= GUI: when initializing now sent only stage and visibility logo flag 
+= MouseManager: container for hint is sent in setHintImaging method
+= NumericStepper: implemented possibility to on/off change the value by drag
+= DropDownList: fixed a bug with component height & width
+= MouseManager: fixed a bug with cursor change on object
+= RollOut: optimized work with component
+= TabPanel: implemented methods of work with component contents: add tab to specified index position; remove 
+  tab with content; remove tab with content from specified index position; return instance of object from 
+  specified index position; return index position for TabData instance; return TabData of current tab; return 
+  tabs number; component update.
+
+
+AlternativaGUIDefaultTheme 1.6.0:
+----
+= NumericStepper: changed, because NumericStepper in AlternativaGUI was changed
+= TabPanel: changed, because TabPanel in AlternativaGUI was changed
+= RollOut: changed, because RollOut in AlternativaGUI was changed
+= DropDownList: changed, because DropDownList in AlternativaGUI was changed
+
+
+AlternativaGUI 5.20.0
+----
++ Implemented AlternativaGUI class (library version)
+
+= NumericStepper: fixed a lock bug, added change value functionality when drag
+= LayoutManager: added the method (enabled) to enable or disable the manager
+= MouseManager: added the method (enabled) to enable or disable the manager
+= KeyboardManager: added the method (enabled) to enable or disable the manager
+= LabelTF: added method embedFonts, responsible for the use embedded or system fonts
+
+AlternativaGUIDefaultTheme 1.5.0:
+----
+= NumericStepper: changed, because NumericStepper in AlternativaGUI was changed 
+= NumericButton: changed, because NumericStepper in AlternativaGUI was changed
+
+
+AlternativaGUI 5.18.1
+----
++ Implemented RedrawManager class
+
+= Optimisation: speeded the library
+= ScrollPane: added getter for ScrollBar
+= Reimplemented Rollout
+= LabelTF: fixed a bug with align
+= LayoutManager: it changed since it was added RedrawManager
+
+AlternativaGUIDefaultTheme 1.4.1:
+----
++ Implemented ScrollPaneWithScroller class 
++ Implemented BorderContainer class 
++ Implemented Cursors class 
++ Added custom cursors
+
+= Optimisation since it was added RedrawManager
+
+
+AlternativaGUI 5.17.0
+----
++ Implemented Logo class 
++ Implemented RadioButton class
++ Implemented CheckBox  class 
++ List: Appeared property scrollBarSpace - the gap between content and scrollbar
+
+= List: Fixed search by letter
+= List, Tree: Fixed a bug with the work of cursor control keys from the keyboard
+= Tree: when you click on a folder the item is now selected
+= CheckBox: Fixed a problem with the size during creation
+= ScrollPane: Fixed a bug that appears due to the absence of the ScrollBar
+= TabPanel: Getter and setter appeared to selectTab - the index of selected tab
+
+AlternativaGUIDefaultTheme 1.3.0:
+----
+= DropDownMenu: Fixed a bug where the mouse cursor does not allocate objects in a given menu

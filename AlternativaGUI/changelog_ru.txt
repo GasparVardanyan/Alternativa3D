@@ -1,0 +1,77 @@
+﻿Список изменений в AlternativaGUI и AlternativaGUIDefaultTheme
+
+AlternativaGUI 5.21.0
+----
+= GUI: при инициализации теперь передается только stage и флаг видимости логотипа
+= MouseManager: передается контейнер для хинта в методе setHintImaging
+= NumericStepper: реализована возможность включения/отключения изменения значение по драгу
+= DropDownList: поправлен баг с высотой и шириной компоненты
+= MouseManager: поправлен баг с изменением курсора над объектом
+= RollOut: оптимизирована работа с компонентой
+= TabPanel: реализованы методы работы с содержимым компоненты: добавление вкладки к указанной позиции индекса; 
+  удаление вкладки с контентом; удаление вкладки с контентом из заданной позиции индекса; возвращение экземпляра 
+  объекта из заданной позиции индекса; возвращение позиции индекса для экземпляра TabData; возвращение TabData текущей вкладки; 
+  возвращение количества вкладок; обновление компоненты.
+
+
+AlternativaGUIDefaultTheme 1.6.0:
+----
+= NumericStepper: внесены правки в связи с изменением NumericStepper в AlternativaGUI
+= TabPanel: внесены правки в связи с изменением TabPanel в AlternativaGUI
+= RollOut: внесены правки в связи с изменением RollOut в AlternativaGUI
+= DropDownList: внесены правки в связи с изменением DropDownList в AlternativaGUI
+
+
+AlternativaGUI 5.20.0
+----
++ Реализован класс AlternativaGUI (версия библиотеки)
+
+= NumericStepper: поправлен баг с залочиванием, добавлен функционал изменения значения при драге
+= LayoutManager: добавлен метод(enabled) включения и отключения менеджера
+= MouseManager: добавлен метод(enabled) включения и отключения менеджера
+= KeyboardManager: добавлен метод(enabled) включения и отключения менеджера
+= LabelTF: добавлен метод embedFonts, отвечающий за использование встроенных или системных шрифтов
+
+AlternativaGUIDefaultTheme 1.5.0:
+----
+= NumericStepper: внесены правки в связи с изменением NumericStepper в AlternativaGUI
+= NumericButton: внесены правки в связи с изменением NumericStepper в AlternativaGUI
+
+
+AlternativaGUI 5.18.1
+----
++ Реализован класс RedrawManager
+
+= Оптимизация: ускорение работы библиотеки
+= ScrollPane: добавился геттер на ScrollBar
+= Переписан Rollout
+= LabelTF: поправлен баг с align
+= LayoutManager: внесены правки в связи с появлением RedrawManager
+
+AlternativaGUIDefaultTheme 1.4.1:
+----
++ Реализован класс ScrollPaneWithScroller
++ Реализован класс BorderContainer
++ Реализован класс Cursors
++ Появились кастомные курсоры
+
+= Оптимизация кода в связи появлением RedrawManager
+
+
+AlternativaGUI 5.17.0
+----
++ Реализован класс Logo
++ Реализован класс RadioButton
++ Реализован класс CheckBox
++ List: появилось свойство scrollBarSpace - зазор между контентом и скроллбар
+
+= List: поправлен поиск по буквам
+= List, Tree: поправлен баг с работой клавиш управления курсором с клавиатуры
+= Tree: при клике на папку элемент теперь выделяется
+= CheckBox: исправлена проблема с размером при создании
+= ScrollPane: исправлен баг появляющийся из-за отсутствия ScrollBar
+= TabPanel: появился геттер и сеттер на selectTab - индекс выбранной вкладки
+
+AlternativaGUIDefaultTheme 1.3.0:
+----
+= DropDownMenu: исправлен баг когда курсор мыши не выделяет объекты под выпадающим меню

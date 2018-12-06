@@ -1,0 +1,325 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="DefaultLODManager,alternativa.gui.layout.DefaultLODManager,_LODIndex,_limitsH,_limitsV,maxPriorityIndex,objects,LODIndex,limitsH,limitsV,add,init,remove,resize" name="keywords">
+<title>alternativa.gui.layout.DefaultLODManager</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'DefaultLODManager - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/gui/layout/DefaultLODManager.html&amp;alternativa/gui/layout/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;DefaultLODManager</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class DefaultLODManager"); titleBar_setSubNav(false,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.gui.layout</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class DefaultLODManager</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Implements</td><td><a href="ILODManager.html">ILODManager</a></td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.gui.layout:DefaultLODManager-->Custom LODManager.   <p> In the DefaultLODManager are implemented primitive LOD logic.</p>  <p> This LODManager has three LOD indexes.</p>  <p>Boundaries of switching:   <div class='listing'><pre>  <ul>_limitsH = [1000, 800];</ul>   <ul>_limitsV = [800, 600]; </ul>  </pre></div></p><!--translator-end:alternativa.gui.layout:DefaultLODManager--><p></p>
+<p>
+<span class="classHeaderTableLabel">See also</span>
+</p>
+<div class="seeAlso">
+<a href="LODmanager.html" target="">LODmanager</a>
+<br>
+<a href="ILODManager.html" target="">ILODManager</a>
+<br>
+<a href="../lod/simple/LODlistenerPriority.html" target="">alternativa.gui.lod.simple.LODlistenerPriority</a>
+<br>
+<a href="LayoutManager.html" target="">LayoutManager</a>
+</div>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#limitsH">limitsH</a> : Array<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/limitsH/get-short-->Limits LOD switch on horizontal.<!--translator-end:alternativa.gui.layout:DefaultLODManager/limitsH/get-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#limitsV">limitsV</a> : Array<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/limitsV/get-short-->Limits LOD switch on vertical.<!--translator-end:alternativa.gui.layout:DefaultLODManager/limitsV/get-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_LODIndex">_LODIndex</a> : int = -1<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/_LODIndex-short-->Current LOD index.<!--translator-end:alternativa.gui.layout:DefaultLODManager/_LODIndex-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#LODIndex">LODIndex</a> : int<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/LODIndex/get-short-->Change LOD index.<!--translator-end:alternativa.gui.layout:DefaultLODManager/LODIndex/get-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_limitsH">_limitsH</a> : Array<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:_limitsH-short-->Limits LOD switch on horizontal.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:_limitsH-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#_limitsV">_limitsV</a> : Array<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:_limitsV-short-->Limits LOD switch on vertical.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:_limitsV-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#maxPriorityIndex">maxPriorityIndex</a> : int<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:maxPriorityIndex-short-->LOD priority.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:maxPriorityIndex-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#objects">objects</a> : Vector<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#DefaultLODManager()">DefaultLODManager</a>()</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#add()">add</a>(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/add-short-->Add object to list.<!--translator-end:alternativa.gui.layout:DefaultLODManager/add-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#init()">init</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/init-short-->Initialization of the DefaultLODManager.<!--translator-end:alternativa.gui.layout:DefaultLODManager/init-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/remove-short-->Remove object from list.<!--translator-end:alternativa.gui.layout:DefaultLODManager/remove-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#resize()">resize</a>(width:int, height:int):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.layout:DefaultLODManager/resize-short-->Resize.<!--translator-end:alternativa.gui.layout:DefaultLODManager/resize-short--></div>
+</td><td class="summaryTableOwnerCol">DefaultLODManager</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="_limitsH"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_limitsH</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _limitsH:Array</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:_limitsH-->Limits LOD switch on horizontal.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:_limitsH--></p></div>
+<a name="limitsH"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">limitsH</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>limitsH:Array</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:DefaultLODManager/limitsH/get-->Limits LOD switch on horizontal.<!--translator-end:alternativa.gui.layout:DefaultLODManager/limitsH/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get limitsH():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set limitsH(value:Array):void</code>
+<br>
+</div>
+<a name="_limitsV"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_limitsV</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var _limitsV:Array</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:_limitsV-->Limits LOD switch on vertical.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:_limitsV--></p></div>
+<a name="limitsV"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">limitsV</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>limitsV:Array</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:DefaultLODManager/limitsV/get-->Limits LOD switch on vertical.<!--translator-end:alternativa.gui.layout:DefaultLODManager/limitsV/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get limitsV():Array</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set limitsV(value:Array):void</code>
+<br>
+</div>
+<a name="_LODIndex"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">_LODIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public var _LODIndex:int = -1</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/_LODIndex-->Current LOD index.<!--translator-end:alternativa.gui.layout:DefaultLODManager/_LODIndex--></p></div>
+<a name="LODIndex"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">LODIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>LODIndex:int</code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.gui.layout:DefaultLODManager/LODIndex/get-->Change LOD index.<!--translator-end:alternativa.gui.layout:DefaultLODManager/LODIndex/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get LODIndex():int</code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set LODIndex(value:int):void</code>
+<br>
+</div>
+<a name="maxPriorityIndex"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">maxPriorityIndex</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var maxPriorityIndex:int</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/protected:maxPriorityIndex-->LOD priority.<!--translator-end:alternativa.gui.layout:DefaultLODManager/protected:maxPriorityIndex--></p></div>
+<a name="objects"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">objects</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var objects:Vector</code>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="DefaultLODManager()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DefaultLODManager</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function DefaultLODManager()</code>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="add()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function add(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/add-->Add object to list.<!--translator-end:alternativa.gui.layout:DefaultLODManager/add--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a></code> &mdash; <!--translator-start:alternativa.gui.layout:DefaultLODManager/add/object-->LOD object.<!--translator-end:alternativa.gui.layout:DefaultLODManager/add/object--></td>
+</tr>
+</table>
+</div>
+<a name="init()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">init</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function init():void</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/init-->Initialization of the DefaultLODManager.<!--translator-end:alternativa.gui.layout:DefaultLODManager/init--></p></div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function remove(object:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a>):void</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/remove-->Remove object from list.<!--translator-end:alternativa.gui.layout:DefaultLODManager/remove--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">object</span>:<a href="../lod/simple/ISimpleLODobject.html">ISimpleLODobject</a></code> &mdash; <!--translator-start:alternativa.gui.layout:DefaultLODManager/remove/object-->LOD object.<!--translator-end:alternativa.gui.layout:DefaultLODManager/remove/object--></td>
+</tr>
+</table>
+</div>
+<a name="resize()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">resize</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function resize(width:int, height:int):void</code><p><!--translator-start:alternativa.gui.layout:DefaultLODManager/resize-->Resize.<!--translator-end:alternativa.gui.layout:DefaultLODManager/resize--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">width</span>:int</code> &mdash; <!--translator-start:alternativa.gui.layout:DefaultLODManager/resize/width-->Width.<!--translator-end:alternativa.gui.layout:DefaultLODManager/resize/width--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">height</span>:int</code> &mdash; <!--translator-start:alternativa.gui.layout:DefaultLODManager/resize/height-->Height.<!--translator-end:alternativa.gui.layout:DefaultLODManager/resize/height--></td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

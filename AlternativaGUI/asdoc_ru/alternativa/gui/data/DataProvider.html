@@ -1,0 +1,978 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="DataProvider,alternativa.gui.data.DataProvider,ASC,DESC,data,length,addItem,addItemAt,addItems,addItemsAt,checkIndex,clone,concat,dispatchChangeEvent,dispatchPreChangeEvent,generateSortFunction,getItemAt,getItemAtByField,getItemIndex,getItemIndexByField,removeAll,removeItem,removeItemAt,replaceItem,replaceItemAt,sort,sortOn,toString,toVector" name="keywords">
+<title>alternativa.gui.data.DataProvider</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'DataProvider - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/gui/data/DataProvider.html&amp;alternativa/gui/data/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;DataProvider</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class DataProvider"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.gui.data</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class DataProvider</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">DataProvider <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> flash.events.EventDispatcher</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.gui.data:DataProvider-->
+  В классе DataProvider предусмотрены методы и свойства, которые позволяют запрашивать и изменять данные в любом компоненте, основанном на списке (List, DropDownList, DropDownMenu, Tree). 
+  <p>Поставщик данных — это линейная коллекция элементов, которая служат источником данных (например, массив). Каждый элемент в поставщике данных является объектом, содержащим одно или несколько полей данных. 
+  Элементы, которые содержатся в поставщике данных, можно вызвать, указав их индекс, при помощи метода DataProvider.getItemAt().</p>
+  <!--translator-end:alternativa.gui.data:DataProvider--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#length">length</a> : uint<div class="summaryTableDescription">[read-only] <!--translator-start:alternativa.gui.data:DataProvider/length/get-short-->
+   Число элементов, содержащихся в поставщике данных.<!--translator-end:alternativa.gui.data:DataProvider/length/get-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+</table>
+</div>
+<a name="protectedPropertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Properties</div>
+<table id="summaryTableProtectedProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#data">data</a> : Vector<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/protected:data-short-->
+   Вектор объектов.<!--translator-end:alternativa.gui.data:DataProvider/protected:data-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#DataProvider()">DataProvider</a>(value:Vector = null)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/DataProvider-short-->
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/DataProvider-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItem()">addItem</a>(item:Object):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/addItem-short-->
+   Добавляет элемент в конец набора данных, предоставляемого поставщиком данных.<!--translator-end:alternativa.gui.data:DataProvider/addItem-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItemAt()">addItemAt</a>(item:Object, index:uint):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/addItemAt-short-->
+   Добавляет новый элемент к поставщику данных в заданном положении индекса.<!--translator-end:alternativa.gui.data:DataProvider/addItemAt-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItems()">addItems</a>(items:Array):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/addItems-short-->
+   Добавляет несколько элементов в конец набора данных DataProvider и отправляет событие DataChangeType.ADD.<!--translator-end:alternativa.gui.data:DataProvider/addItems-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addItemsAt()">addItemsAt</a>(items:Array, index:uint):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/addItemsAt-short-->
+   Добавляет несколько элементов в поставщик данных по указанному индексу и отправляет событие DataChangeType.ADD.<!--translator-end:alternativa.gui.data:DataProvider/addItemsAt-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../data/DataProvider.html">DataProvider</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/clone-short-->
+   Создает копию текущего объекта DataProvider.<!--translator-end:alternativa.gui.data:DataProvider/clone-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#concat()">concat</a>(items:Array):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/concat-short-->
+   Дописывает указанные элементы в конец набора данных, предоставляемых текущим поставщиком данных.<!--translator-end:alternativa.gui.data:DataProvider/concat-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemAt()">getItemAt</a>(index:uint):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/getItemAt-short-->
+   Возвращает элемент из заданного положения индекса.<!--translator-end:alternativa.gui.data:DataProvider/getItemAt-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemAtByField()">getItemAtByField</a>(fieldName:String, value:*):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/getItemAtByField-short-->
+   Возвращает объект, у которого значение поля fieldName совпадает с value.<!--translator-end:alternativa.gui.data:DataProvider/getItemAtByField-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemIndex()">getItemIndex</a>(item:Object):int</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/getItemIndex-short-->
+   Возвращает индекс заданного элемента.<!--translator-end:alternativa.gui.data:DataProvider/getItemIndex-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getItemIndexByField()">getItemIndexByField</a>(fieldName:String, value:*):int</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/getItemIndexByField-short-->
+   Возвращает индекс объекта, у которого значение поля fieldName совпадает с value.<!--translator-end:alternativa.gui.data:DataProvider/getItemIndexByField-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeAll()">removeAll</a>():void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/removeAll-short-->
+   Удаляет все элементы из поставщика данных и отправляет событие DataChangeType.REMOVE_ALL.<!--translator-end:alternativa.gui.data:DataProvider/removeAll-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeItem()">removeItem</a>(item:Object):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/removeItem-short-->
+   Удаляет указанный элемент из поставщика данных и отправляет событие DataChangeType.REMOVE.<!--translator-end:alternativa.gui.data:DataProvider/removeItem-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeItemAt()">removeItemAt</a>(index:uint):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/removeItemAt-short-->
+   Удаляет элемент в заданном положении индекса и передает событие DataChangeType.REMOVE.<!--translator-end:alternativa.gui.data:DataProvider/removeItemAt-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#replaceItem()">replaceItem</a>(newItem:Object, oldItem:Object):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/replaceItem-short-->
+   Заменяет существующий элемент новым и отправляет событие DataChangeType.REPLACE.<!--translator-end:alternativa.gui.data:DataProvider/replaceItem-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#replaceItemAt()">replaceItemAt</a>(newItem:Object, index:uint):Object</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/replaceItemAt-short-->
+   Заменяет элемент с указанным индексом и отправляет событие DataChangeType.REPLACE.<!--translator-end:alternativa.gui.data:DataProvider/replaceItemAt-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sort()">sort</a>(... sortArgs):*</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/sort-short-->
+   Сортирует элементы в поставщике данных и отправляет событие DataChangeType.SORT.<!--translator-end:alternativa.gui.data:DataProvider/sort-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#sortOn()">sortOn</a>(fieldName:String, order:String):*</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/sortOn-short-->
+   Сортирует элементы, содержащиеся в поставщике данных, по указанному полю и отправляет событие DataChangeType.SORT.<!--translator-end:alternativa.gui.data:DataProvider/sortOn-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/toString-short-->
+   Создает строковое представление данных, содержащихся в поставщике данных.<!--translator-end:alternativa.gui.data:DataProvider/toString-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toVector()">toVector</a>():Vector</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.gui.data:DataProvider/toVector-short-->
+   Создает объект <code>Vector.&lt;Object&gt;</code>, представляющий данные, содержащиеся в поставщике данных.<!--translator-end:alternativa.gui.data:DataProvider/toVector-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+</table>
+</div>
+<a name="protectedMethodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Protected Methods</div>
+<table id="summaryTableProtectedMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#checkIndex()">checkIndex</a>(index:int, maximum:int):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchChangeEvent()">dispatchChangeEvent</a>(evtType:String, items:Vector, startIndex:int, endIndex:int):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#dispatchPreChangeEvent()">dispatchPreChangeEvent</a>(evtType:String, items:Vector, startIndex:int, endIndex:int):void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#generateSortFunction()">generateSortFunction</a>(sortField:String, order:String):Function</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#ASC">ASC</a> : String = "ASC"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.data:DataProvider/ASC-short-->
+   Способ сортировки: по возрастанию 
+   <!--translator-end:alternativa.gui.data:DataProvider/ASC-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#DESC">DESC</a> : String = "DESC"<div class="summaryTableDescription">[static] <!--translator-start:alternativa.gui.data:DataProvider/DESC-short-->
+   Способ сортировки: по убыванию 
+   <!--translator-end:alternativa.gui.data:DataProvider/DESC-short--></div>
+</td><td class="summaryTableOwnerCol">DataProvider</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="data"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">data</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected var data:Vector</code><p><!--translator-start:alternativa.gui.data:DataProvider/protected:data-->
+   Вектор объектов. 
+   <!--translator-end:alternativa.gui.data:DataProvider/protected:data--></p></div>
+<a name="length"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">length</td><td class="detailHeaderType">property</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>length:uint</code>&nbsp;&nbsp;[read-only]<p><!--translator-start:alternativa.gui.data:DataProvider/length/get-->
+   Число элементов, содержащихся в поставщике данных. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/length/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get length():uint</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="DataProvider()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DataProvider</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function DataProvider(value:Vector = null)</code><p><!--translator-start:alternativa.gui.data:DataProvider/DataProvider-->
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/DataProvider--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:Vector</code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/DataProvider/value-->Вектор объектов
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/DataProvider/value--></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="addItem()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItem(item:Object):void</code><p><!--translator-start:alternativa.gui.data:DataProvider/addItem-->
+   Добавляет элемент в конец набора данных, предоставляемого поставщиком данных.  
+   <!--translator-end:alternativa.gui.data:DataProvider/addItem--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItem/item-->Элемент, добавляемый в конец текущего поставщика данных. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/addItem/item--></td>
+</tr>
+</table>
+</div>
+<a name="addItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItemAt(item:Object, index:uint):void</code><p><!--translator-start:alternativa.gui.data:DataProvider/addItemAt-->
+   Добавляет новый элемент к поставщику данных в заданном положении индекса. 
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItemAt/item-->Объект, содержащий данные добавляемого элемента.
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemAt/item--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItemAt/index-->Индекс добавления элемента.
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemAt/index--></td>
+</tr>
+</table>
+</div>
+<a name="addItems()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItems</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItems(items:Array):void</code><p><!--translator-start:alternativa.gui.data:DataProvider/addItems-->
+   Добавляет несколько элементов в конец набора данных DataProvider и отправляет событие DataChangeType.ADD. Элементы, которые добавляются в том порядке, в котором они указаны. 
+   <!--translator-end:alternativa.gui.data:DataProvider/addItems--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">items</span>:Array</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItems/items-->Элементы, добавляемые в конец поставщика данных.
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/addItems/items--></td>
+</tr>
+</table>
+</div>
+<a name="addItemsAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addItemsAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addItemsAt(items:Array, index:uint):void</code><p><!--translator-start:alternativa.gui.data:DataProvider/addItemsAt-->
+   Добавляет несколько элементов в поставщик данных по указанному индексу и отправляет событие DataChangeType.ADD.  
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemsAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">items</span>:Array</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItemsAt/items-->Элементы, добавляемые в поставщик данных.
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemsAt/items--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/addItemsAt/index-->Индекс положения вставки элементов. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/addItemsAt/index--></td>
+</tr>
+</table>
+</div>
+<a name="checkIndex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">checkIndex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function checkIndex(index:int, maximum:int):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:int</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">maximum</span>:int</code></td>
+</tr>
+</table>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="../data/DataProvider.html">DataProvider</a></code><p><!--translator-start:alternativa.gui.data:DataProvider/clone-->
+   Создает копию текущего объекта DataProvider.  
+   <!--translator-end:alternativa.gui.data:DataProvider/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../data/DataProvider.html">DataProvider</a></code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/clone-return-->
+                        Новый экземпляр объекта DataProvider. 
+   
+   
+                        
+                     <!--translator-end:alternativa.gui.data:DataProvider/clone-return--></td>
+</tr>
+</table>
+</div>
+<a name="concat()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">concat</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function concat(items:Array):void</code><p><!--translator-start:alternativa.gui.data:DataProvider/concat-->
+   Дописывает указанные элементы в конец набора данных, предоставляемых текущим поставщиком данных. 
+   <!--translator-end:alternativa.gui.data:DataProvider/concat--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">items</span>:Array</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/concat/items-->Элементы, добавляемые в поставщик данных. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/concat/items--></td>
+</tr>
+</table>
+</div>
+<a name="dispatchChangeEvent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchChangeEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchChangeEvent(evtType:String, items:Vector, startIndex:int, endIndex:int):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">evtType</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">items</span>:Vector</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startIndex</span>:int</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">endIndex</span>:int</code></td>
+</tr>
+</table>
+</div>
+<a name="dispatchPreChangeEvent()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">dispatchPreChangeEvent</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function dispatchPreChangeEvent(evtType:String, items:Vector, startIndex:int, endIndex:int):void</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">evtType</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">items</span>:Vector</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">startIndex</span>:int</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">endIndex</span>:int</code></td>
+</tr>
+</table>
+</div>
+<a name="generateSortFunction()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">generateSortFunction</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>protected function generateSortFunction(sortField:String, order:String):Function</code><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sortField</span>:String</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">order</span>:String</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Function</code></td>
+</tr>
+</table>
+</div>
+<a name="getItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemAt(index:uint):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/getItemAt-->
+   Возвращает элемент из заданного положения индекса.  
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemAt/index-->Местоположение возвращаемого элемента. 
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAt/index--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemAt-return-->Элемент в заданном положении индекса. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAt-return--></td>
+</tr>
+</table>
+</div>
+<a name="getItemAtByField()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemAtByField</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemAtByField(fieldName:String, value:*):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/getItemAtByField-->
+   Возвращает объект, у которого значение поля fieldName совпадает с value.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAtByField--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemAtByField/fieldName-->Поле, по которому будет производиться поиск.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAtByField/fieldName--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemAtByField/value-->Искомое значение.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAtByField/value--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemAtByField-return-->Элемент который соответствует запросу поиска.
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemAtByField-return--></td>
+</tr>
+</table>
+</div>
+<a name="getItemIndex()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemIndex</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemIndex(item:Object):int</code><p><!--translator-start:alternativa.gui.data:DataProvider/getItemIndex-->
+   Возвращает индекс заданного элемента.  
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndex--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemIndex/item-->Искомый элемент. 
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndex/item--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemIndex-return-->Индекс возвращаемого элемента, или -1, если указанный элемент не найден. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndex-return--></td>
+</tr>
+</table>
+</div>
+<a name="getItemIndexByField()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getItemIndexByField</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getItemIndexByField(fieldName:String, value:*):int</code><p><!--translator-start:alternativa.gui.data:DataProvider/getItemIndexByField-->
+   Возвращает индекс объекта, у которого значение поля fieldName совпадает с value.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndexByField--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemIndexByField/fieldName-->Поле, по которому будет производиться поиск.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndexByField/fieldName--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">value</span>:*</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemIndexByField/value-->Искомое значение.
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndexByField/value--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>int</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/getItemIndexByField-return-->Элемент который соответствует запросу поиска.
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/getItemIndexByField-return--></td>
+</tr>
+</table>
+</div>
+<a name="removeAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeAll():void</code><p><!--translator-start:alternativa.gui.data:DataProvider/removeAll-->
+   Удаляет все элементы из поставщика данных и отправляет событие DataChangeType.REMOVE_ALL.  
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/removeAll--></p></div>
+<a name="removeItem()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeItem(item:Object):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/removeItem-->
+   Удаляет указанный элемент из поставщика данных и отправляет событие DataChangeType.REMOVE. 
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItem--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">item</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/removeItem/item-->Удаляемый элемент. 
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItem/item--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/removeItem-return-->Удаленный элемент.  
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItem-return--></td>
+</tr>
+</table>
+</div>
+<a name="removeItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeItemAt(index:uint):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/removeItemAt-->
+   Удаляет элемент в заданном положении индекса и передает событие DataChangeType.REMOVE. 
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItemAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/removeItemAt/index-->Индекс удаляемого элемента. 
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItemAt/index--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/removeItemAt-return-->Удаленный элемент. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/removeItemAt-return--></td>
+</tr>
+</table>
+</div>
+<a name="replaceItem()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">replaceItem</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function replaceItem(newItem:Object, oldItem:Object):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/replaceItem-->
+   Заменяет существующий элемент новым и отправляет событие DataChangeType.REPLACE.  
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItem--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">newItem</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItem/newItem-->Элемент-заместитель. 
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItem/newItem--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">oldItem</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItem/oldItem-->Заменяемый элемент. 
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItem/oldItem--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItem-return-->Замененный элемент. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItem-return--></td>
+</tr>
+</table>
+</div>
+<a name="replaceItemAt()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">replaceItemAt</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function replaceItemAt(newItem:Object, index:uint):Object</code><p><!--translator-start:alternativa.gui.data:DataProvider/replaceItemAt-->
+   Заменяет элемент с указанным индексом и отправляет событие DataChangeType.REPLACE.  
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItemAt--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">newItem</span>:Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItemAt/newItem-->Элемент-заместитель. 
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItemAt/newItem--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">index</span>:uint</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItemAt/index-->Индекс заменяемого элемента. 
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItemAt/index--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Object</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/replaceItemAt-return-->Замененный элемент. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/replaceItemAt-return--></td>
+</tr>
+</table>
+</div>
+<a name="sort()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sort</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sort(... sortArgs):*</code><p><!--translator-start:alternativa.gui.data:DataProvider/sort-->
+   Сортирует элементы в поставщике данных и отправляет событие DataChangeType.SORT.  
+   <!--translator-end:alternativa.gui.data:DataProvider/sort--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code>... <span class="label">sortArgs</span></code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/sort/sortArgs-->Аргументы, используемый при сортировке. 
+   <!--translator-end:alternativa.gui.data:DataProvider/sort/sortArgs--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/sort-return-->Возвращаемое значение зависит от того, получает ли метод какие-либо аргументы. Более подробные сведения см. в описании метода Array.sort(). Этот метод возвращает 0, если для свойства sortOption установлено значение Array.UNIQUESORT. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/sort-return--></td>
+</tr>
+</table>
+</div>
+<a name="sortOn()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">sortOn</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function sortOn(fieldName:String, order:String):*</code><p><!--translator-start:alternativa.gui.data:DataProvider/sortOn-->
+   Сортирует элементы, содержащиеся в поставщике данных, по указанному полю и отправляет событие DataChangeType.SORT. Указанное поле может являться строкой или массивом строковых значений, определяющих несколько сортируемых полей в порядке старшинства.  
+   <!--translator-end:alternativa.gui.data:DataProvider/sortOn--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">fieldName</span>:String</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/sortOn/fieldName-->Поле элемента, по которому требуется производить сортировку. Это значение может быть строкой или массивом строковых значений. 
+   <!--translator-end:alternativa.gui.data:DataProvider/sortOn/fieldName--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">order</span>:String</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/sortOn/order-->Параметры сортировки. 
+   <!--translator-end:alternativa.gui.data:DataProvider/sortOn/order--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>*</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/sortOn-return-->Возвращаемое значение зависит от того, получает ли метод какие-либо аргументы. Дополнительную информацию см. в описании метода Array.sortOn(). Если свойство sortOption имеет значение Array.UNIQUESORT, этот метод возвращает 0. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/sortOn-return--></td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public override function toString():String</code><p><!--translator-start:alternativa.gui.data:DataProvider/toString-->
+   Создает строковое представление данных, содержащихся в поставщике данных.  
+   <!--translator-end:alternativa.gui.data:DataProvider/toString--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/toString-return-->Строковое представление данных, содержащихся в поставщике данных. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/toString-return--></td>
+</tr>
+</table>
+</div>
+<a name="toVector()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toVector</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toVector():Vector</code><p><!--translator-start:alternativa.gui.data:DataProvider/toVector-->
+   Создает объект <code>Vector.&lt;Object&gt;</code>, представляющий данные, содержащиеся в поставщике данных.  
+   <!--translator-end:alternativa.gui.data:DataProvider/toVector--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Vector</code> &mdash; <!--translator-start:alternativa.gui.data:DataProvider/toVector-return-->Объект <code>Vector.&lt;Object&gt;</code>, представляющий данные, содержащиеся в поставщике данных. 
+   
+   <!--translator-end:alternativa.gui.data:DataProvider/toVector-return--></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="ASC"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">ASC</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const ASC:String = "ASC"</code><p><!--translator-start:alternativa.gui.data:DataProvider/ASC-->
+   Способ сортировки: по возрастанию 
+   <!--translator-end:alternativa.gui.data:DataProvider/ASC--></p></div>
+<a name="DESC"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">DESC</td><td class="detailHeaderType">constant</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const DESC:String = "DESC"</code><p><!--translator-start:alternativa.gui.data:DataProvider/DESC-->
+   Способ сортировки: по убыванию 
+   <!--translator-end:alternativa.gui.data:DataProvider/DESC--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
