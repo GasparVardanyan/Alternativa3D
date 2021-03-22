@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<application xmlns="http://ns.adobe.com/air/application/28.0">
+  <id>TaraTools</id>
+  <versionNumber>1.0</versionNumber>
+  <filename>TaraTools</filename>
+  <name>TaraTools</name>
+  <initialWindow>
+    <title>TaraTools</title>
+    <content>TaraTools.swf</content>
+    <systemChrome>standard</systemChrome>
+    <transparent>false</transparent>
+    <visible>true</visible>
+    <minimizable>true</minimizable>
+    <maximizable>true</maximizable>
+    <resizable>true</resizable>
+    <depthAndStencil>true</depthAndStencil>
+    <renderMode>direct</renderMode>
+    <minSize>640 460</minSize>
+  </initialWindow>
+  <!-- 
+	More options:
+	http://livedocs.adobe.com/flex/3/html/File_formats_1.html#1043413
+	-->
+  <android>
+    <manifestAdditions><![CDATA[<manifest android:installLocation="auto" xmlns:android="http://schemas.android.com/apk/res/android" />]]></manifestAdditions>
+  </android>
+  <icon>
+  </icon>
+  <fileTypes>
+    <fileType>
+      <name>TARA</name>
+      <extension>tara</extension>
+      <contentType>application/octet-stream</contentType>
+    </fileType>
+    <fileType>
+      <name>TARA5</name>
+      <extension>tara5</extension>
+      <contentType>application/octet-stream</contentType>
+    </fileType>
+  </fileTypes>
+</application>

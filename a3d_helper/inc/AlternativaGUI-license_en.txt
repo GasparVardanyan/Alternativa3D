@@ -1,0 +1,81 @@
+﻿Before usage of Program, please, review the terms of the present license agreement. Any usage of Program means total and unconditional consent to the conditions of the present license agreement.
+
+If you do not totally accept the terms of the license agreement you do not have the right to use Program for any purpose. 
+
+The license agreement 
+
+The terms used in the present license agreement:
+
+"Program" - the computer program «AlternativaGUI», the certificate of the state registration of the computer program № 2008613631from 29.07.2008, library AlternativaGUI Default Theme with the initial program code;
+
+"User" - the person using Program;
+
+"Rightholder" - the Limited Liability Cоmpany «Alternativa Game» (Alternativa LLC), being the legal owner of exclusive rights to the Program;
+
+"License" - the present License agreement on granting the right to use Program.
+
+ 
+
+1. License
+
+The present License is concluded between you, User and Rightholder. License sets the conditions of usage of Program by User.
+
+1.1. By copying Program and installing it to the personal computer User expresses total and unconditional consent to the conditions of License. 
+
+1.2.  Usage of Program is permitted only on conditions of the present License. If User does not totally accept the terms of License, User does not receive the right to use Program for any purpose. Usage of Program with violation (non-fulfillment) of any conditions of License is prohibited.
+
+1.3. Usage of Program on conditions of the present License for any purposes is free of charge.
+
+1.4. Rightholder grants User the right to use License for period of validity of an exclusive right on Program.
+
+1.5. Rightholder grants the right to use Program under the present License on the whole world territory.
+
+1.6. Transfer of the exclusive right to Program to the new legal owner isn't the reason for change or cancellation of the present License.
+
+ 
+
+2.    Rights to Program
+
+Exclusive property right to Program belongs to Rightholder. Copyrights belong to the authors of Program.
+
+ 
+
+3. Rights of User
+
+3.1. Rightholder empowers User with non-exclusive non-transferable right to use Program in the following ways:
+
+3.1.1. To use Program for the functional purpose specified, to copy and install it on the personal computer(s) of User only for the purpose specified. User is empowered to install Program on the unlimited number of personal computers.
+
+3.2. Program shall be used with indication of the trade name "AlternativaPlatform". User has the right to switch off the indication of author's rights of the authors of Program (copyright) in the flash-module, using built-in functions.
+
+ 
+
+4. Restrictions
+
+4.1. User does not receive the right to do or allow to do the following actions regarding Program: translation, modification, other retreatment and other usage of Program not directly provided by the present License except the usage of Program in volume and by means directly provided by the present License, legislation of Russia or other countries effective at the moment of granting of the present License.
+
+4.2. User has the right to use Program directly to create products and services for websites on the Internet network, including projects that are paid for by a third party and the user's own projects, including commercial projects.
+
+User does not have the right to reproduce or extend the program itself, to place it in a network for third party access, or include it as part of a software bundle.
+
+4.3. User is not allowed to reverse compile, reverse assemble, decipher and do any other actions with the compiled code of Program aimed to breach the protection system of Program against unauthorized usage and receipt of information about implementation of algorithms used in Program, to create derivative products with usage of Program, without written consent of Rightholder.
+
+4.4. Internet sharing and providing access to third parties to any product, including works-in-progress and demo versions, based on Program, will require that User first inform and make clear to all other users the authorship of said product, work-in-progress or demo version. To declare authorship of product, work-in-progress or demo version based on Program, User can place on the same page with Program the note "Powered by AlternativaPlatform", which will be linked to http://www.alternativaplatform.com/. If there is no possibility of putting a permanent sign on the screen, it should be placed in a subsection, clearly visible to User. If site policy forbids links to other sources, the text "Powered by AlternativaPlatform " without the link will be sufficient.
+
+ 
+
+5.    Cancellation of License at the initiative of Rightholder
+
+5.1. Rightholder has the right to terminate License under the initiative in the case of infringement by User the article 3.1.1.; 3.2.; 4.1.; paragraph 2 of the articles 4.2.; 4.3.; 4.4. of License by a direction to User the notice about cancellation of License by any way.
+
+5.2. User hasn't the right to use an exclusive right to Program after reception of the notice about cancellation of License.
+
+ 
+
+6. Liability by License
+
+6.1. The software is provided «AS IS». Rightholder shall not provide any guarantees regarding correct and uninterrupted work of Program, compliance of Program with specific purposes of User and also shall not provide any guarantee not directly stated by the present License.
+
+6.2. In the maximum degree allowed by the effective legislation Rightholder as well as his partners shall not be responsible for any direct or indirect consequences of any usage of Program and/or any damage to User and/or the third parties caused by any usage or disuse of Program, including possible errors or bugs in the work of Program.
+
+6.3. For infringement by User of item 5.2. of License, User bears responsibility under the current legislation of the Russian Federation.
