@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision
+END
+BoxSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BoxSphereCollider.as
+END
+BoxBoxCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BoxBoxCollider.as
+END
+CollisionKdNode.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/CollisionKdNode.as
+END
+SpherePlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/SpherePlaneCollider.as
+END
+KdTreeCollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/KdTreeCollisionDetector.as
+END
+BoxRectCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BoxRectCollider.as
+END
+ICollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/ICollisionPredicate.as
+END
+BoxPlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BoxPlaneCollider.as
+END
+CollisionKdTree.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/CollisionKdTree.as
+END
+BoxTriangleCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BoxTriangleCollider.as
+END
+ICollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/ICollisionDetector.as
+END
+IRayCollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/IRayCollisionPredicate.as
+END
+ICollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/ICollider.as
+END
+BruteForceCollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/BruteForceCollisionDetector.as
+END
+SphereSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/15305/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.2.0/src/alternativa/physics/collision/SphereSphereCollider.as
+END

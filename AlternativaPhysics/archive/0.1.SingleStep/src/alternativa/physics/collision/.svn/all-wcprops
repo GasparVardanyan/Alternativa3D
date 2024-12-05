@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision
+END
+BoxSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/BoxSphereCollider.as
+END
+BoxBoxCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/BoxBoxCollider.as
+END
+SpherePlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/SpherePlaneCollider.as
+END
+CollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/CollisionDetector.as
+END
+CollisionPoint.as
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/CollisionPoint.as
+END
+BoxPlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/BoxPlaneCollider.as
+END
+ICollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/ICollider.as
+END
+CollisionInfo.as
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/CollisionInfo.as
+END
+SphereSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/collision/SphereSphereCollider.as
+END

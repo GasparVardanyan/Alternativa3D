@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/!svn/ver/34889/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision
+END
+ICollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/30874/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/ICollisionDetector.as
+END
+CollisionKdNode.as
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/28424/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionKdNode.as
+END
+CollisionKdTree2D.as
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/28424/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionKdTree2D.as
+END
+IRayCollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/22253/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/IRayCollisionPredicate.as
+END
+IBodyCollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/22253/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/IBodyCollisionPredicate.as
+END
+CollisionPrimitive.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/30874/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionPrimitive.as
+END
+KdTreeCollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/30874/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/KdTreeCollisionDetector.as
+END
+ICollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/22253/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/ICollisionPredicate.as
+END
+ICollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/22253/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/ICollider.as
+END
+CollisionKdTree.as
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/30874/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionKdTree.as
+END

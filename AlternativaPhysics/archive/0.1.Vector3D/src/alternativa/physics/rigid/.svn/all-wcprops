@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid
+END
+Body.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/Body.as
+END
+BodyState.as
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/BodyState.as
+END
+PhysicsUtils.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/PhysicsUtils.as
+END
+ContactPoint.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/ContactPoint.as
+END
+RigidWorld.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/RigidWorld.as
+END
+Contact.as
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/Contact.as
+END
+BodyMaterial.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/rigid/BodyMaterial.as
+END

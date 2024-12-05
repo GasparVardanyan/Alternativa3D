@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Button xmlns:mx="http://www.adobe.com/2006/mxml">
+	<mx:Script>
+		<![CDATA[
+			private var _downMode:Boolean = false;
+			public var downModeIcon:Class;
+			public var upModeIcon:Class;
+			
+			public function get downMode():Boolean {
+				return _downMode;
+			}
+			
+			override protected function clickHandler(event:MouseEvent):void {
+				changeMode();
+				super.clickHandler(event);
+			}
+			
+			public function changeMode():void {
+				_downMode = !_downMode;
+				if (_downMode) {
+					setStyle("icon", downModeIcon);
+				} else {
+					setStyle("icon", upModeIcon);
+				}
+			}
+		]]>
+	</mx:Script>
+</mx:Button>

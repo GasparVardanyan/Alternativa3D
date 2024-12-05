@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="alternativa.physics.collision.CollisionPoint"/>
+    <classEntry path="alternativa.physics.collision.BoxPlaneCollider"/>
+    <classEntry path="alternativa.physics.rigid.primitives.RigidBox"/>
+    <classEntry path="alternativa.physics.rigid.Body"/>
+    <classEntry path="alternativa.physics.rigid.BodyState"/>
+    <classEntry path="alternativa.physics.collision.SpherePlaneCollider"/>
+    <classEntry path="alternativa.physics.types.Vector3"/>
+    <classEntry path="alternativa.physics.collision.BoxSphereCollider"/>
+    <classEntry path="alternativa.physics.collision.SphereSphereCollider"/>
+    <classEntry path="alternativa.physics.rigid.primitives.RigidSphere"/>
+    <classEntry path="alternativa.physics.collision.BoxBoxCollider"/>
+    <classEntry path="alternativa.physics.rigid.BodyMaterial"/>
+    <classEntry path="alternativa.physics.collision.CollisionDetector"/>
+    <classEntry path="alternativa.physics.rigid.primitives.RigidPlane"/>
+    <classEntry path="alternativa.physics.types.Quaternion"/>
+    <classEntry path="alternativa.physics.types.Matrix3"/>
+    <classEntry path="alternativa.physics.types.Matrix4"/>
+    <classEntry path="alternativa.physics.collision.ICollider"/>
+    <classEntry path="alternativa.physics.rigid.RigidWorld"/>
+    <classEntry path="alternativa.physics.collision.CollisionInfo"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

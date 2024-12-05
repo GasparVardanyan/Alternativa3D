@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="alternativa.physics.Body"/>
+    <classEntry path="alternativa.physics.BodyList"/>
+    <classEntry path="alternativa.physics.BodyListItem"/>
+    <classEntry path="alternativa.physics.BodyMaterial"/>
+    <classEntry path="alternativa.physics.BodyState"/>
+    <classEntry path="alternativa.physics.CollisionPrimitiveList"/>
+    <classEntry path="alternativa.physics.CollisionPrimitiveListItem"/>
+    <classEntry path="alternativa.physics.Contact"/>
+    <classEntry path="alternativa.physics.ContactPoint"/>
+    <classEntry path="alternativa.physics.PhysicsUtils"/>
+    <classEntry path="alternativa.physics.World"/>
+    <classEntry path="alternativa.physics.altphysics"/>
+    <classEntry path="alternativa.physics.collision.CollisionKdNode"/>
+    <classEntry path="alternativa.physics.collision.CollisionKdTree"/>
+    <classEntry path="alternativa.physics.collision.CollisionKdTree2D"/>
+    <classEntry path="alternativa.physics.collision.CollisionPrimitive"/>
+    <classEntry path="alternativa.physics.collision.IBodyCollisionPredicate"/>
+    <classEntry path="alternativa.physics.collision.ICollider"/>
+    <classEntry path="alternativa.physics.collision.ICollisionDetector"/>
+    <classEntry path="alternativa.physics.collision.ICollisionPredicate"/>
+    <classEntry path="alternativa.physics.collision.IRayCollisionPredicate"/>
+    <classEntry path="alternativa.physics.collision.KdTreeCollisionDetector"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxBoxCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxPlaneCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxRectCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxSphereCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.BoxTriangleCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.SpherePlaneCollider"/>
+    <classEntry path="alternativa.physics.collision.colliders.SphereSphereCollider"/>
+    <classEntry path="alternativa.physics.collision.primitives.CollisionBox"/>
+    <classEntry path="alternativa.physics.collision.primitives.CollisionRect"/>
+    <classEntry path="alternativa.physics.collision.primitives.CollisionSphere"/>
+    <classEntry path="alternativa.physics.collision.primitives.CollisionTriangle"/>
+    <classEntry path="alternativa.physics.collision.types.BoundBox"/>
+    <classEntry path="alternativa.physics.collision.types.Ray"/>
+    <classEntry path="alternativa.physics.collision.types.RayIntersection"/>
+    <classEntry path="alternativa.physics.constraints.Constraint"/>
+    <classEntry path="alternativa.physics.constraints.MaxDistanceConstraint"/>
+    <classEntry path="alternativa.physics.math.Matrix3"/>
+    <classEntry path="alternativa.physics.math.Matrix4"/>
+    <classEntry path="alternativa.physics.math.Quaternion"/>
+    <classEntry path="alternativa.physics.math.Vector3"/>
+    <classEntry path="alternativa.physics.primitives.RigidBox"/>
+    <classEntry path="alternativa.physics.primitives.RigidCylinder"/>
+    <classEntry path="alternativa.physics.primitives.RigidPlane"/>
+    <classEntry path="alternativa.physics.primitives.RigidRect"/>
+    <classEntry path="alternativa.physics.primitives.RigidSphere"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

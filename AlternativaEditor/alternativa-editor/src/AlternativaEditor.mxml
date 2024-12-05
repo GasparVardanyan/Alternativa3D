@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" xmlns:local="*"
+	xmlns:local1="alternativa.editor.*" applicationComplete="onApplicationComplete()">
+	<mx:Script>
+		<![CDATA[
+			import alternativa.editor.events.LevelLoaded;
+			import alternativa.editor.importLevel.BinaryImporter;
+			import alternativa.editor.export.BinaryExporter;
+			import alternativa.editor.importLevel.TanksXmlImporter;
+			import alternativa.editor.prop.Bonus;
+			import alternativa.editor.SceneContainer;
+			import alternativa.editor.prop.Tile;
+			import alternativa.editor.prop.Prop;
+			import alternativa.editor.Preview;
+			import alternativa.editor.scene.MainScene;
+			import alternativa.editor.LibraryManager;
+			import alternativa.editor.scene.CursorScene;
+			import mx.events.ResizeEvent;
+			import __AS3__.vec.Vector;
+			import mx.preloaders.DownloadProgressBar;
+			import mx.controls.Text;
+			import mx.controls.Label;
+			import mx.core.Window;
+			import mx.controls.ProgressBar;
+			import mx.core.windowClasses.StatusBar;
+			import mx.events.FlexNativeMenuEvent;
+			import mx.controls.FlexNativeMenu;
+			import alternativa.editor.propslib.PropMesh;
+			import alternativa.editor.propslib.PropObject;
+			import alternativa.editor.propslib.PropData;
+			import alternativa.editor.propslib.PropGroup;
+			import alternativa.editor.propslib.PropsLibrary;
+			import alternativa.engine3d.materials.FillMaterial;
+			import alternativa.engine3d.materials.SpriteTextureMaterial;
+			import alternativa.engine3d.materials.TextureMaterial;
+			import alternativa.types.Texture;
+			import alternativa.engine3d.core.Sprite3D;
+			import alternativa.engine3d.core.Object3D;
+			import flash.utils.setTimeout;
+			import alternativa.engine3d.core.Vertex;
+			import alternativa.types.Point3D;
+			import alternativa.engine3d.core.Surface;
+			import gui.events.PropListEvent;
+			import alternativa.engine3d.core.Mesh;
+			import mx.events.CloseEvent;
+			import alternativa.utils.KeyboardUtils;
+			import alternativa.engine3d.loaders.Loader3DS;
+			import alternativa.types.Map;
+			
+			
+			// Превью
+			public static var preview:Preview;
+			// Контейнер, содержащий главную и курсорные сцены 
+//			private var sceneContainer:SceneContainer;
+			// Главная сцена
+			private var mainScene:MainScene;
+			// Курсорная сцена 
+			private var cursorScene:CursorScene;
+			// Открывающийся файл
+			private var file:File = new File();
+			// Файл, в который сохраняем
+			private var fileForSave:File = new File();
+			// Файл, в который сохраняем xml
+			private var fileForSaveXML:File = new File();
+			// Фильтр
+			private var fileFilter:FileFilter;
+			private var xmlFilter:FileFilter; 
+			// Файловый поток
+			private var fileStream:FileStream;
+			// Функция, вызвавшая текущую
+			private var func:Function;
+			// Индикатор несохраненного уровня
+			private var emptyPath:Boolean = true;
+			// Индикатор сохранения в xml
+			private var xmlLevel:Boolean = false;
+			private var progressBar:ProgressBar;
+			// Некоторые элементы меню
+			private var normalItem:NativeMenuItem;
+			private var collisionItem:NativeMenuItem;
+			private var lockItem:NativeMenuItem;
+			private var lockGroupItem:NativeMenuItem;
+			private var unlockItem:NativeMenuItem;
+			private var snapItem:NativeMenuItem;
+			private var showGridItem:NativeMenuItem;
+			// Текстурная панель
+			private var propertyPanel:Panel;
+			//Менеджер библиотек
+			private var libraryManager:LibraryManager;
+			private var tanksXmlImporter:TanksXmlImporter;
+			private var binaryImporter:BinaryImporter;
+			
+			
+			private function onApplicationComplete():void {
+				
+				// Создание превью
+				preview = new Preview();
+				previewPanel.addChild(preview);
+				previewPanel.addEventListener(Event.RESIZE, onPreviewPanelResize);
+				
+				// Проплист
+				proplistPanel.addEventListener(PropListEvent.SELECT, onPropSelect);
+				proplistPanel.addEventListener(MouseEvent.CLICK, onPropListClick);
+				
+				// Контейнер со сценами
+//				sceneContainer = new SceneContainer();
+//				workspace.addChild(sceneContainer);
+				mainScene = sceneContainer.mainScene;
+				propertyPanel = new Panel();
+				propertyPanel.percentWidth = 100;
+				mainScene.propertyPanel = propertyPanel;
+				cursorScene = sceneContainer.cursorScene;
+				
+								
+				stage.addEventListener(KeyboardEvent.KEY_DOWN, onKeyDown);
+				
+				libraryManager = new LibraryManager();
+				libraryManager.addEventListener(Event.CHANGE, onLibraryManagerChange);
+				comboBox.dataProvider = libraryManager.libraries;
+				
+				initFileWork();
+				initMenuItem();
+				
+				addEventListener(Event.CLOSING, onClosing);
+			
+				initProgressBar();
+				
+			}
+			
+			private function onClosing(e:Event):void {
+			}
+			
+			private function onPreviewPanelResize(e:Event):void {
+				preview.onResize();
+			}
+			
+			private function initProgressBar():void {
+			
+				progressBar = new ProgressBar();
+				progressBar.labelPlacement = "left";
+           		progressBar.indeterminate = true;
+           		progressBar.direction = "right";
+             	progressBar.width = 200;
+                progressBar.visible = false;
+				
+				var stBar:StatusBar = statusBar as StatusBar;
+				stBar.addChild(libraryManager.libraryProgressBar);
+				libraryManager.libraryProgressBar.percentWidth = 100;
+				stBar.addChild(progressBar);
+				progressBar.percentWidth = 100;
+				
+
+			}
+			
+			private function initFileWork():void {
+				
+				file.addEventListener(Event.SELECT, onOpenFileSelect);
+				fileForSave.addEventListener(Event.SELECT, onSaveFileSelect);
+				fileForSaveXML.addEventListener(Event.SELECT, onSaveFileSelect);
+				
+				fileFilter = new FileFilter("Ballance level (*.lvl)", "*.lvl");
+				xmlFilter = new FileFilter("Tanks level(*.xml)", "*.xml");
+				
+				fileStream = new FileStream();
+				tanksXmlImporter = new TanksXmlImporter(mainScene, libraryManager);
+				tanksXmlImporter.addEventListener(LevelLoaded.LEVEL_LOADED, endLoadLevel);
+				binaryImporter = new BinaryImporter(mainScene, libraryManager);
+				binaryImporter.addEventListener(LevelLoaded.LEVEL_LOADED, endLoadLevel);
+			}
+			
+			private function initMenuItem():void {
+			
+				var option:NativeMenuItem = menu.nativeMenu.getItemAt(3);
+				var optionSubmenu:NativeMenu = option.submenu; 
+				var viewMode:NativeMenuItem = optionSubmenu.getItemAt(1);
+				normalItem = viewMode.submenu.getItemAt(0);
+				normalItem.checked = true;
+				collisionItem = viewMode.submenu.getItemAt(1);
+				
+				var multipleProp:NativeMenuItem = optionSubmenu.getItemAt(0);
+				lockItem = multipleProp.submenu.getItemAt(2);				
+				lockGroupItem = multipleProp.submenu.getItemAt(1);		
+				lockGroupItem.checked = true;		
+				unlockItem = multipleProp.submenu.getItemAt(0);		
+				
+				snapItem = optionSubmenu.getItemAt(2);
+				snapItem.checked = true;
+				
+				showGridItem = optionSubmenu.getItemAt(3);
+				showGridItem.checked = true;
+			}
+			
+			/**
+			 * Обработка выделения элемента в проплисте. 
+			 */ 
+			private function onPropSelect(e:PropListEvent):void {
+				preview.showProp(e.selectedItem);
+				workspace.setFocus();
+				cursorScene.object = e.selectedItem.clone();
+				
+			}
+			
+			private function onPropListClick(e:MouseEvent):void {
+				workspace.setFocus();
+			}
+			
+			
+			private function onLibraryManagerChange(e:Event):void {
+				
+				cursorScene.clear();
+				var libraries:Array = libraryManager.libraries;
+				comboBox.selectedItem = libraries[libraries.length - 1];
+				onComboBoxChange(null);
+			}
+			
+			
+			/**
+			 * Создает новый уровень. 
+			 */ 
+			private function newLevel():void {
+				mainScene.clear();
+				cursorScene.updateMaterial();
+				emptyPath = true;
+			}
+			
+			/**
+			 * 
+			 */ 
+			private function loadLevel():void {
+				progressBar.label = "Loading level...";
+				progressBar.x = width - progressBar.width;
+				progressBar.visible = true;
+				
+				fileStream.open(file, FileMode.READ);
+				mainScene.clear();
+				if (xmlLevel) {
+					tanksXmlImporter.importFromFileStream(fileStream);
+					xmlLevel = false;
+				} else {
+					binaryImporter.importFromFileStream(fileStream);
+//					loadingLevel();
+				}
+			}
+			
+			
+			private var libname:String = "";
+			
+			/**
+			 * Загрузка уровня.
+			 */ 
+			private function loadingLevel():void {
+				try {
+					while (fileStream.bytesAvailable) {
+						// Проверка на то, что в предыдущей итерации не загружали библиотеку
+						if (libname == "") {
+							var lib:String = fileStream.readUTF();
+							// Составляем ключ: имя библиотеки + имя группы + имя меша
+							libname = lib + fileStream.readUTF() + fileStream.readUTF();
+						}
+						// Ищем проп по ключу
+						var prop:Prop = libraryManager.nameProp[libname];
+						if (prop) {
+							// Добавляем проп на сцену
+							prop = mainScene.addProp(prop, new Point3D(fileStream.readFloat(), fileStream.readFloat(), fileStream.readFloat()), fileStream.readFloat(), true, false);
+							var free:Boolean = fileStream.readBoolean();
+							if (!free) {
+								// Заполняем карту
+								mainScene.occupyMap.occupy(prop);
+							}
+							var textureName:String = fileStream.readUTF();
+//							var isMirror:Boolean = fileStream.readBoolean();
+							var tile:Tile = prop as Tile;
+							if (tile) {
+								try {
+									if (textureName != "") {
+										tile.textureName = textureName;
+									}
+								} catch (err:Error) {
+									Alert.show("Tile " + tile.name + ": texture " + textureName + " is not found");
+								}
+								
+//								if (isMirror) {
+//									tile.mirrorTexture();
+//								}
+							}
+							libname = "";
+							mainScene.calculate();
+						} else {
+							Alert.show("Library '"+ lib + "' is used by the level. Load?", "", Alert.YES|Alert.NO, this, libAlertListener);
+							return;
+						}
+					}
+				} catch  (err:Error) {
+					Alert.show(err.message);
+				}
+				
+				endLoadLevel(); 
+			}
+			
+			
+			
+			/**
+			 * Конец загрузки уровня.
+			 */ 
+			private function endLoadLevel():void {
+//				trace("end");
+				fileStream.close();
+				mainScene.changed = false;
+				emptyPath = false;
+				fileForSave = file.clone();
+				fileForSave.addEventListener(Event.SELECT, onSaveFileSelect);
+				libname = "";
+				progressBar.visible = false;
+				cursorScene.visible = true;
+			}
+			
+			/**
+			 * Обработка алерта загрузки библиотеки.
+			 */ 
+			private function libAlertListener(e:CloseEvent):void {
+				
+				switch (e.detail) {
+					case Alert.YES:
+						libraryManager.loadLibrary(loadingLevel);
+						break;
+					case Alert.NO:
+						mainScene.clear();
+						endLoadLevel();
+						break;	
+				}
+				
+			}
+			
+			/**
+			 * Сохраняет в файл.
+			 */ 
+			private function saveFile():void {
+				
+				if (emptyPath) {
+					// Если не знаем куда сохранить...
+					saveFileAs();
+				} else {
+					onSaveFileSelect(null);
+				}
+				
+			}
+			/**
+			 * Сохранить как...
+			 */ 
+			private function saveFileAs():void {
+				if (xmlLevel) {
+					fileForSaveXML.browseForSave("Export to tank...");
+				} else {
+					fileForSave.browseForSave("Save as...");
+				}
+			}
+			
+			
+			/**
+			 * Открывает файл. 
+			 */ 
+			private function openFile():void {
+				if (xmlLevel) {
+					file.browseForOpen("Открыть", [xmlFilter]);
+				} else {
+					file.browseForOpen("Открыть", [fileFilter]);
+				}
+			}
+			
+			/**
+			 * Обработка выбора файла.
+			 */ 
+			private function onOpenFileSelect(e:Event):void {
+				
+				func = loadLevel;
+				changesCheck();
+			}
+			
+			private function onSaveFileSelect(e:Event):void {
+				progressBar.label = "Level is saving...";
+				progressBar.x = width - progressBar.width;
+				progressBar.visible = true;
+				var fileStream:FileStream = new FileStream();
+				
+				if (xmlLevel) {
+					fileStream.open(fileForSaveXML, FileMode.WRITE);
+					mainScene.export(MainScene.EXPORT_XML, fileStream);
+					xmlLevel = false;
+				} else {
+					fileStream.open(fileForSave, FileMode.WRITE);
+					mainScene.export(MainScene.EXPORT_BINARY, fileStream);
+					emptyPath = false;
+					mainScene.changed = false;
+				}
+				
+				fileStream.close();
+				executeFunction();
+				progressBar.visible = false;
+			}
+			
+			
+			
+			/**
+			 * Проверяет были ли изменения в текущем уровне. 
+			 */ 
+			private function changesCheck():void {
+
+				if (mainScene.changed) {
+					Alert.show("Save changes?", "Save level", Alert.YES|Alert.NO|Alert.CANCEL, this, alertClick)
+				} else {
+					executeFunction();
+				}
+				
+				
+			}
+			
+			private function alertClick(e:CloseEvent):void {
+				
+				switch (e.detail) {
+					case Alert.YES:
+						saveFile();
+						break;
+					case Alert.NO:
+						executeFunction();
+						break;	
+					case Alert.CANCEL:
+						func = null;
+						break;	
+				}
+			}	
+			/**
+			 * 
+			 */ 
+			private function executeFunction():void {
+				
+				if (func != null) {
+					func();
+					func = null;
+				}
+			}
+			
+			/**
+			 * Обработка нажатия клавиш.
+			 */ 
+			private function onKeyDown(e:KeyboardEvent):void {
+			
+				switch (e.keyCode) {
+					case KeyboardUtils.SPACE:
+						if (normalItem.checked) {
+							
+						    if (cursorScene.visible) {
+								var prop:Prop = cursorScene.object;
+								if (prop) {
+									sceneContainer.addProp(prop);
+								} else {
+									Alert.show("Select prop for pasting!");
+								}
+						    } else {
+						    	if (propertyPanel.enabled && showPropertyButton.downMode && mainScene.isTexturePanel) {
+						    		mainScene.onTexturePanelSelect();
+						    	}
+						    }
+						} 	
+						break;	
+				}
+				
+				workspace.setFocus();
+			}
+			
+			private function snapMode():void {
+				
+				if (snapItem.checked) {
+					sceneContainer.snapMode = snapItem.checked = false;
+				} else {
+					sceneContainer.snapMode = snapItem.checked = true;
+				}
+				
+			}
+			
+			private function showGrid():void {
+				
+        		if (showGridButton.downMode) {
+        			mainScene.hideGrid();
+        			showGridItem.checked = false;
+        			showGridButton.toolTip = "show grid"
+        		} else {
+        			mainScene.showGrid();
+        			showGridItem.checked = true;
+        			showGridButton.toolTip = "hide grid"
+        		}
+			}
+			
+			private function showPropertyPanel():void {
+				
+				if (showPropertyButton.downMode) {
+					vbox.addChild(propertyPanel);
+				} else {
+					vbox.removeChild(propertyPanel);
+				}
+			} 
+				
+			private function viewMode():void {
+				if (normalItem.checked) {
+					collisionItem.checked = true;
+					normalItem.checked = false;
+					mainScene.showCollisionBoxes();
+				} else {
+					collisionItem.checked = false;
+					normalItem.checked = true;
+					mainScene.hideCollisionBoxes();
+				}		
+			}
+			
+			private function onComboBoxChange(e:Event):void {
+				
+				proplistPanel.deleteAllProps();
+				if (comboBox.selectedLabel != "") {
+					var props:Array = libraryManager.getLibrary(comboBox.selectedLabel);
+					var len:int = props.length;
+					
+					for (var i:int = 0; i < len; i++) {
+						var prop:Prop = props[i];
+						proplistPanel.addProp(prop.group, prop.name, prop.icon, prop);
+					}
+				}
+				
+				
+			}
+			
+			private function onTypeSelectingChange(event:Event):void {
+				
+				mainScene.allowSelectingTypes.clear();
+				switch (typeSelecting.selectedIndex) {
+					case 0:
+						mainScene.allowSelectingTypes.add("Tile");
+						mainScene.allowSelectingTypes.add("TileSprite3D");
+						mainScene.allowSelectingTypes.add("Spawn");
+						mainScene.allowSelectingTypes.add("Prop");
+						mainScene.allowSelectingTypes.add("Bonus");
+						break;
+					case 1:
+						mainScene.allowSelectingTypes.add("Tile");
+						break;
+					case 2:
+						mainScene.allowSelectingTypes.add("TileSprite3D");
+						break;
+					case 3:
+						mainScene.allowSelectingTypes.add("Spawn");
+						mainScene.allowSelectingTypes.add("Bonus");
+						break;
+						
+				}
+			}
+			
+			private function hideSelectedProps():void {
+				mainScene.hideSelectedProps();
+			}
+			
+			private function showAll():void {
+				mainScene.showAll();
+			}
+			
+			
+			import mx.events.MenuEvent;
+            import mx.controls.Alert;
+            import mx.collections.*;
+
+			
+			/**
+			 * Выбор пункта меню.
+			 */ 
+            private function menuHandler(event:FlexNativeMenuEvent):void  {
+
+                switch (event.label) {
+                	case "New":
+                		func = newLevel;
+                		changesCheck();
+                		break; 		
+                	case "Open...":
+                		openFile();
+                		break; 		
+                	case "Save as...":
+                		saveFileAs();
+                		break;
+                	case "Save":
+                		saveFile();
+                		break;
+                	case "Clear":
+                		mainScene.clear();
+                		mainScene.changed = true;
+                		cursorScene.updateMaterial();
+                		break;	
+            		case "Clear and load...":
+                		libraryManager.clearAndLoadLibrary();
+                		break;
+                	case "Load...":
+                		libraryManager.loadLibrary();
+                		break;		
+                	case "Unlock":
+                		if (!unlockItem.checked) {
+                			unlockItem.checked = true;
+                			lockGroupItem.checked = false;
+                			lockItem.checked = false;
+                			sceneContainer.multiplePropMode = 0;
+                		}
+                		break;
+                	case "Lock group":
+                		if (!lockGroupItem.checked) {
+                			lockGroupItem.checked = true;
+                			lockItem.checked = false;
+                			unlockItem.checked = false;
+                			sceneContainer.multiplePropMode = 1;
+                		}
+                		break;
+                	case "Lock":
+                		if (!lockItem.checked) {
+                			lockItem.checked = true;
+                			unlockItem.checked = false;
+                			lockGroupItem.checked = false;
+                			sceneContainer.multiplePropMode = 2;
+                		}
+                		break;	
+                	case "Export to Tanks":
+                		xmlLevel = true;
+                		saveFileAs();
+                		break;
+                	case "Import from Tanks":
+                		xmlLevel = true;
+                		openFile();
+                		break;	
+                	case "Normal":
+                	case "Collision boxes":
+						viewButton.changeMode();
+						viewMode();						
+                		break;	
+                	case "Snap":
+                		snapButton.changeMode();
+                		snapMode();
+                		break;	
+                	case "Undo":
+                		sceneContainer.undo();
+                		break;	
+                	case "Redo":
+                		sceneContainer.redo();
+                		break;
+                	case "Show grid":
+                		showGridButton.changeMode();
+                		showGrid();
+                		break;		
+                	case "Help":
+                		
+                		Alert.show("Esc - deselect prop\n" + 
+                				"Delete, C - delete selected prop\n" +
+                				"X, Z - rotate selected prop or cursor\n" + 
+                				"drag, arrows - moving selected prop or cursor\n" +
+                				"Shift + drag - copy and moving selected prop\n" +
+                				"V + drag, W, S - vertical moving\n" +
+                				"Space - paste prop\n" + 
+                				"Middle - panning\n"+
+                				"F - mirror texture\n"+
+                				"Q - select conflict props\n"+
+                				"Alt + middle - rotate camera", "Help");
+                				
+                		break;	
+
+	
+                } 		
+              
+                workspace.setFocus();
+                		 
+            }
+		]]>
+	</mx:Script>
+	<!--<mx:MenuBar labelField="@label" itemClick="menuHandler(event);" 
+  	 	dataProvider="{menuBarCollection}"  width="100%" id="menuBar"/> --> 
+  	 	
+  	<mx:menu>
+        <mx:FlexNativeMenu dataProvider="{menuData}" 
+            labelField="@label" 
+            showRoot="false"
+            keyEquivalentField="@keyEquivalent" 
+            itemClick="menuHandler(event);"
+            id="menu"/>
+    </mx:menu>
+    <mx:XML id="menuData">
+        <root>
+            <menuitem label="File">
+                <menuitem label="New" keyEquivalent="n" ctrlKey="true"/>
+                <menuitem label="Open..." keyEquivalent="o" ctrlKey="true"/>
+                <menuitem label="Save" keyEquivalent="s" ctrlKey="true"/>
+                <menuitem label="Save as..." keyEquivalent="s" ctrlKey="true" altKey="true"/>
+                <menuitem type="separator"/>
+                <menuitem label="Export to Tanks" keyEquivalent="t" ctrlKey="true"/>
+                <menuitem label="Import from Tanks" keyEquivalent="i" ctrlKey="true"/>
+            </menuitem>
+            <menuitem label="Edit">
+            	<menuitem label="Undo" keyEquivalent="z" ctrlKey="true"/>
+            	<menuitem label="Redo" keyEquivalent="y" ctrlKey="true"/>
+            	<menuitem label="Clear" keyEquivalent="c" altKey="true" ctrlKey="true"/>
+            </menuitem>
+            <menuitem label="Library">
+            	<menuitem label="Clear and load..." keyEquivalent="l" altKey="true" ctrlKey="true"/>
+            	<menuitem label="Load..." keyEquivalent="l" ctrlKey="true"/>
+            </menuitem>
+            <menuitem label="Option" name="Option">
+                <menuitem label="Multiple prop">
+                	<menuitem label="Unlock" />
+                	<menuitem label="Lock group"/>
+                	<menuitem label="Lock"/>
+                </menuitem>
+		        <menuitem label="View mode">
+		        	<menuitem label="Normal"/>
+		        	<menuitem label="Collision boxes"/>
+		        </menuitem>
+                <menuitem label="Snap"/>
+                <menuitem label="Show grid" type="check" toggled="true"/>
+            </menuitem>
+            <menuitem label="Help">
+            </menuitem>
+        </root>
+    </mx:XML> 	
+    
+   	<mx:ControlBar width="100%" height="26" paddingTop="0" paddingLeft="0" paddingRight="0" paddingBottom="0" >
+   		<local:ModeButton width="24" height="24" toolTip="snap mode"
+			upModeIcon="@Embed('icons/editor_snap_icon_on.png')" 
+   			icon="@Embed('icons/editor_snap_icon_on.png')" 
+   			downModeIcon="@Embed('icons/editor_snap_icon.png')"
+   			id="snapButton"
+   			click="snapMode()"/>
+   		<local:ModeButton width="24" height="24" toolTip="view mode"
+   			upModeIcon="@Embed('icons/editor_boxes_icon_on.png')" 
+   			icon="@Embed('icons/editor_boxes_icon_on.png')" 
+   			downModeIcon="@Embed('icons/editor_boxes_icon.png')" 
+   			click="viewMode()"
+   			id="viewButton"/>
+   		<local:ModeButton width="24" height="24" toolTip="hide grid" id="showGridButton"
+   			upModeIcon="@Embed('icons/editor_grid_icon_on.png')" 
+   			icon="@Embed('icons/editor_grid_icon_on.png')" 
+   			downModeIcon="@Embed('icons/editor_grid_icon.png')"  
+   			click="showGrid()"
+   			/>
+   		<local:ModeButton width="24" height="24" toolTip="show property panel" 
+   			upModeIcon="@Embed('icons/editor_textures_icon_on.png')" 
+   			icon="@Embed('icons/editor_textures_icon_on.png')" 
+   			downModeIcon="@Embed('icons/editor_textures_icon.png')" 
+   			id="showPropertyButton"
+   			click="showPropertyPanel()"/>
+   		<mx:Button width="24" height="24" toolTip="hide selected props" 
+   			icon="@Embed('icons/icon_hide_selected.png')" 
+   			id="hideSelectedButton"
+   			click="hideSelectedProps()"/>
+   		<mx:Button width="24" height="24" toolTip="show all" 
+   			icon="@Embed('icons/icon_show_all.png')" 
+   			id="showAllButton"
+   			click="showAll()"/>
+   		<mx:Label text="Selecting prop:" width="89"/>	
+   		<mx:ComboBox width="130" change="onTypeSelectingChange(event)" id="typeSelecting">
+   			<mx:ArrayCollection>
+   				<mx:String>All</mx:String>
+	    	    <mx:String>Tile</mx:String>
+	         	<mx:String>Sprite</mx:String>
+	         	<mx:String>Bonus + Spawn</mx:String>
+      		</mx:ArrayCollection>
+      	</mx:ComboBox>	
+
+   	</mx:ControlBar>
+   
+	<mx:HDividedBox width="100%" height="100%" y="26"> 
+		<mx:VBox width="100%" height="100%" id="vbox">
+			<mx:Panel title="Workspace" width="100%" height="100%" layout="absolute"  id="workspace" horizontalScrollPolicy="off" >
+				<local1:SceneContainer width="100%" height="100%" id="sceneContainer"/>
+			</mx:Panel>
+		</mx:VBox>
+		
+		<mx:VDividedBox width="300" height="100%" > 
+			<mx:Panel title="Preview" width="100%" height="300" id="previewPanel">
+			</mx:Panel>
+			<mx:VBox width="100%" height="100%">
+				<mx:ComboBox width="100%" change="onComboBoxChange(event)" id="comboBox"/>
+				<local:PropListPanel id="proplistPanel"/>	
+			</mx:VBox>
+		</mx:VDividedBox> 
+	</mx:HDividedBox> 
+	
+</mx:WindowedApplication>

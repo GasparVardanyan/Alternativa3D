@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives
+END
+RigidPlane.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives/RigidPlane.as
+END
+RigidSphere.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives/RigidSphere.as
+END
+RigidBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives/RigidBox.as
+END
+RigidCylinder.as
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives/RigidCylinder.as
+END
+RigidRect.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/15761/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.3.0/src/alternativa/physics/rigid/primitives/RigidRect.as
+END

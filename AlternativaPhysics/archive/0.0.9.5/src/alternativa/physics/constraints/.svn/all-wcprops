@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/39732/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.5/src/alternativa/physics/constraints
+END
+Constraint.as
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/39732/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.5/src/alternativa/physics/constraints/Constraint.as
+END
+MaxDistanceConstraint.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/39732/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.5/src/alternativa/physics/constraints/MaxDistanceConstraint.as
+END

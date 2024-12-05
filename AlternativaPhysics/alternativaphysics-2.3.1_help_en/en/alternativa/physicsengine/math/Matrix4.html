@@ -1,0 +1,862 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="Matrix4,alternativa.physicsengine.math.Matrix4,IDENTITY,add,append,clone,copy,fromAxisAngle,getEulerAngles,getPosition,getQuaternion,invert,prepend,setFromMatrix3,setPosition,setPositionXYZ,setRotationMatrix,subtract,toIdentity,toString,transformPoint,transformPointTransposed,transformPoints,transformPointsN,transformPointsTransposed,transformPointsTransposedN,transformVector,transformVectorTransposed" name="keywords">
+<title>alternativa.physicsengine.math.Matrix4</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'Matrix4 - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/physicsengine/math/Matrix4.html&amp;alternativa/physicsengine/math/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;Matrix4</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class Matrix4"); titleBar_setSubNav(true,false,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.physicsengine.math</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class Matrix4</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.physicsengine.math:Matrix4-->Transformation or body position matrix in space. <br>  m00 m01 m02 m03 <br>  m10 m11 m12 m13 <br>  m20 m21 m22 m23 <br><!--translator-end:alternativa.physicsengine.math:Matrix4--><p></p>
+<br>
+<hr>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#Matrix4()">Matrix4</a>(a:Number = 1, b:Number = 0, c:Number = 0, d:Number = 0, e:Number = 0, f:Number = 1, g:Number = 0, h:Number = 0, i:Number = 0, j:Number = 0, k:Number = 1, l:Number = 0)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/Matrix4-short-->a b c d <br>  e f g h <br>  i j k l <br><!--translator-end:alternativa.physicsengine.math:Matrix4/Matrix4-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#add()">add</a>(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/add-short-->Add matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/add-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#append()">append</a>(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/append-short-->Multiplication by the matrix on the right.<!--translator-end:alternativa.physicsengine.math:Matrix4/append-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#clone()">clone</a>():<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/clone-short-->Clone matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/clone-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#copy()">copy</a>(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/copy-short-->Copy values of specified matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/copy-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#fromAxisAngle()">fromAxisAngle</a>(axis:<a href="Vector3.html">Vector3</a>, angle:Number):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/fromAxisAngle-short-->Method creates a matrix of rotation by a specified angle relative to a given axis.<!--translator-end:alternativa.physicsengine.math:Matrix4/fromAxisAngle-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getEulerAngles()">getEulerAngles</a>(angles:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/getEulerAngles-short-->Get Euler angles.<!--translator-end:alternativa.physicsengine.math:Matrix4/getEulerAngles-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getPosition()">getPosition</a>(position:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/getPosition-short-->Get position or shift.<!--translator-end:alternativa.physicsengine.math:Matrix4/getPosition-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getQuaternion()">getQuaternion</a>(q:Quaternion):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/getQuaternion-short-->Get quaternion.<!--translator-end:alternativa.physicsengine.math:Matrix4/getQuaternion-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#invert()">invert</a>():<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/invert-short-->Getting the inverse matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/invert-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#prepend()">prepend</a>(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/prepend-short-->Multiplication by the matrix on the left.<!--translator-end:alternativa.physicsengine.math:Matrix4/prepend-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setFromMatrix3()">setFromMatrix3</a>(m:<a href="Matrix3.html">Matrix3</a>, offset:<a href="Vector3.html">Vector3</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/setFromMatrix3-short-->Sets the matrix of the rotation and the shift.<!--translator-end:alternativa.physicsengine.math:Matrix4/setFromMatrix3-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPosition()">setPosition</a>(pos:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/setPosition-short-->Sets the coordinates of the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/setPosition-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setPositionXYZ()">setPositionXYZ</a>(x:Number, y:Number, z:Number):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/setPositionXYZ-short-->Sets the coordinates of the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/setPositionXYZ-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#setRotationMatrix()">setRotationMatrix</a>(rx:Number, ry:Number, rz:Number):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/setRotationMatrix-short-->Set matrix of the rotation by the Euler angles.<!--translator-end:alternativa.physicsengine.math:Matrix4/setRotationMatrix-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#subtract()">subtract</a>(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/subtract-short-->Subtract from the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/subtract-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toIdentity()">toIdentity</a>():<a href="../math/Matrix4.html">Matrix4</a>
+</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/toIdentity-short-->Set to identity matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/toIdentity-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#toString()">toString</a>():String</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/toString-short-->String representation of the object.<!--translator-end:alternativa.physicsengine.math:Matrix4/toString-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPoint()">transformPoint</a>(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoint-short-->Transform the point coordinates.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoint-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPoints()">transformPoints</a>(arrin:Vector, arrout:Vector):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoints-short-->The transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoints-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPointsN()">transformPointsN</a>(arrin:Vector, arrout:Vector, len:int):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsN-short-->The transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsN-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPointsTransposed()">transformPointsTransposed</a>(arrin:Vector, arrout:Vector):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposed-short-->Reverse transformation of the points.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposed-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPointsTransposedN()">transformPointsTransposedN</a>(arrin:Vector, arrout:Vector, len:int):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN-short-->Reverse transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformPointTransposed()">transformPointTransposed</a>(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointTransposed-short-->Perform the reverse point transformation (square matrix contains only the rotations).<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointTransposed-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformVector()">transformVector</a>(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformVector-short-->Transforms specified vector without shifting the matrix center.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVector-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#transformVectorTransposed()">transformVectorTransposed</a>(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.math:Matrix4/transformVectorTransposed-short-->Transforms specified vector without shifting the matrix center.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVectorTransposed-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#IDENTITY">IDENTITY</a> : <a href="../math/Matrix4.html">Matrix4</a>
+<div class="summaryTableDescription">[static] <!--translator-start:alternativa.physicsengine.math:Matrix4/IDENTITY-short-->The identity matrix <br>  1 0 0 0 <br>  0 1 0 0 <br>  0 0 1 0<!--translator-end:alternativa.physicsengine.math:Matrix4/IDENTITY-short--></div>
+</td><td class="summaryTableOwnerCol">Matrix4</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="Matrix4()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">Matrix4</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function Matrix4(a:Number = 1, b:Number = 0, c:Number = 0, d:Number = 0, e:Number = 0, f:Number = 1, g:Number = 0, h:Number = 0, i:Number = 0, j:Number = 0, k:Number = 1, l:Number = 0)</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/Matrix4-->a b c d <br>  e f g h <br>  i j k l <br><!--translator-end:alternativa.physicsengine.math:Matrix4/Matrix4--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">a</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">b</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">d</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">e</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">f</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">g</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">h</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">i</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">j</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">k</span>:Number</code> (default = <code>1</code>)<code></code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">l</span>:Number</code> (default = <code>0</code>)<code></code></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="add()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function add(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/add-->Add matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/add--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/add/m-->Added matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/add/m--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code></td>
+</tr>
+</table>
+</div>
+<a name="append()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">append</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function append(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/append-->Multiplication by the matrix on the right.<!--translator-end:alternativa.physicsengine.math:Matrix4/append--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/append/m-->Left operand of multiplication.<!--translator-end:alternativa.physicsengine.math:Matrix4/append/m--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code></td>
+</tr>
+</table>
+</div>
+<a name="clone()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">clone</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function clone():<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/clone-->Clone matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/clone--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/clone-return-->Matrix clone.<!--translator-end:alternativa.physicsengine.math:Matrix4/clone-return--></td>
+</tr>
+</table>
+</div>
+<a name="copy()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">copy</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function copy(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/copy-->Copy values of specified matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/copy--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/copy/m-->Matrix whose values ​​are copied.<!--translator-end:alternativa.physicsengine.math:Matrix4/copy/m--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/copy-return--><!--translator-end:alternativa.physicsengine.math:Matrix4/copy-return--></td>
+</tr>
+</table>
+</div>
+<a name="fromAxisAngle()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">fromAxisAngle</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function fromAxisAngle(axis:<a href="Vector3.html">Vector3</a>, angle:Number):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/fromAxisAngle-->Method creates a matrix of rotation by a specified angle relative to a given axis.<!--translator-end:alternativa.physicsengine.math:Matrix4/fromAxisAngle--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">axis</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/fromAxisAngle/axis-->Normalized vector in the axis. Rotation is performed relative to this axis.<!--translator-end:alternativa.physicsengine.math:Matrix4/fromAxisAngle/axis--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">angle</span>:Number</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/fromAxisAngle/angle-->Rotation angle in radians.<!--translator-end:alternativa.physicsengine.math:Matrix4/fromAxisAngle/angle--></td>
+</tr>
+</table>
+</div>
+<a name="getEulerAngles()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getEulerAngles</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getEulerAngles(angles:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/getEulerAngles-->Get Euler angles.<!--translator-end:alternativa.physicsengine.math:Matrix4/getEulerAngles--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">angles</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/getEulerAngles/angles-->Euler angles.<!--translator-end:alternativa.physicsengine.math:Matrix4/getEulerAngles/angles--></td>
+</tr>
+</table>
+</div>
+<a name="getPosition()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getPosition</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getPosition(position:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/getPosition-->Get position or shift.<!--translator-end:alternativa.physicsengine.math:Matrix4/getPosition--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">position</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/getPosition/position-->Position.<!--translator-end:alternativa.physicsengine.math:Matrix4/getPosition/position--></td>
+</tr>
+</table>
+</div>
+<a name="getQuaternion()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getQuaternion</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getQuaternion(q:Quaternion):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/getQuaternion-->Get quaternion.<!--translator-end:alternativa.physicsengine.math:Matrix4/getQuaternion--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">q</span>:Quaternion</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/getQuaternion/q-->Quaternion.<!--translator-end:alternativa.physicsengine.math:Matrix4/getQuaternion/q--></td>
+</tr>
+</table>
+</div>
+<a name="invert()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">invert</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function invert():<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/invert-->Getting the inverse matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/invert--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code></td>
+</tr>
+</table>
+</div>
+<a name="prepend()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">prepend</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function prepend(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/prepend-->Multiplication by the matrix on the left.<!--translator-end:alternativa.physicsengine.math:Matrix4/prepend--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/prepend/m-->Right operand of the multiplication.<!--translator-end:alternativa.physicsengine.math:Matrix4/prepend/m--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code></td>
+</tr>
+</table>
+</div>
+<a name="setFromMatrix3()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setFromMatrix3</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setFromMatrix3(m:<a href="Matrix3.html">Matrix3</a>, offset:<a href="Vector3.html">Vector3</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/setFromMatrix3-->Sets the matrix of the rotation and the shift.<!--translator-end:alternativa.physicsengine.math:Matrix4/setFromMatrix3--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix3.html">Matrix3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/setFromMatrix3/m-->Matrix of the rotation.<!--translator-end:alternativa.physicsengine.math:Matrix4/setFromMatrix3/m--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">offset</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/setFromMatrix3/offset-->Displacement vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/setFromMatrix3/offset--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/setFromMatrix3-return--><!--translator-end:alternativa.physicsengine.math:Matrix4/setFromMatrix3-return--></td>
+</tr>
+</table>
+</div>
+<a name="setPosition()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPosition</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPosition(pos:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/setPosition-->Sets the coordinates of the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/setPosition--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">pos</span>:<a href="Vector3.html">Vector3</a></code></td>
+</tr>
+</table>
+</div>
+<a name="setPositionXYZ()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setPositionXYZ</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setPositionXYZ(x:Number, y:Number, z:Number):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/setPositionXYZ-->Sets the coordinates of the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/setPositionXYZ--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">x</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">y</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">z</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<a name="setRotationMatrix()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">setRotationMatrix</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function setRotationMatrix(rx:Number, ry:Number, rz:Number):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/setRotationMatrix-->Set matrix of the rotation by the Euler angles.<!--translator-end:alternativa.physicsengine.math:Matrix4/setRotationMatrix--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">rx</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">ry</span>:Number</code></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">rz</span>:Number</code></td>
+</tr>
+</table>
+</div>
+<a name="subtract()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">subtract</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function subtract(m:<a href="Matrix4.html">Matrix4</a>):<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/subtract-->Subtract from the matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/subtract--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">m</span>:<a href="Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/subtract/m-->Subtracted matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/subtract/m--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code></td>
+</tr>
+</table>
+</div>
+<a name="toIdentity()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toIdentity</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toIdentity():<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/toIdentity-->Set to identity matrix.<!--translator-end:alternativa.physicsengine.math:Matrix4/toIdentity--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code><a href="../math/Matrix4.html">Matrix4</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/toIdentity-return--><!--translator-end:alternativa.physicsengine.math:Matrix4/toIdentity-return--></td>
+</tr>
+</table>
+</div>
+<a name="toString()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">toString</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function toString():String</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/toString-->String representation of the object.<!--translator-end:alternativa.physicsengine.math:Matrix4/toString--></p><p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>String</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/toString-return-->String representation of the object.<!--translator-end:alternativa.physicsengine.math:Matrix4/toString-return--></td>
+</tr>
+</table>
+</div>
+<a name="transformPoint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPoint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPoint(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoint-->Transform the point coordinates.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vin</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoint/vin-->Entry point.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoint/vin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vout</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoint/vout-->In this vector is the result of the transformation is written.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoint/vout--></td>
+</tr>
+</table>
+</div>
+<a name="transformPoints()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPoints</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPoints(arrin:Vector, arrout:Vector):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoints-->The transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoints--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">arrin</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoints/arrin-->initial vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoints/arrin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">arrout</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPoints/arrout-->vector receiver.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPoints/arrout--></td>
+</tr>
+</table>
+</div>
+<a name="transformPointsN()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPointsN</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPointsN(arrin:Vector, arrout:Vector, len:int):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsN-->The transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsN--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">arrin</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsN/arrin-->initial vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsN/arrin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">arrout</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsN/arrout-->vector receiver.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsN/arrout--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">len</span>:int</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsN/len-->Number of points in the first vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsN/len--></td>
+</tr>
+</table>
+</div>
+<a name="transformPointsTransposed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPointsTransposed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPointsTransposed(arrin:Vector, arrout:Vector):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposed-->Reverse transformation of the points.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposed--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">arrin</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposed/arrin-->initial vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposed/arrin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">arrout</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposed/arrout-->vector receiver.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposed/arrout--></td>
+</tr>
+</table>
+</div>
+<a name="transformPointsTransposedN()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPointsTransposedN</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPointsTransposedN(arrin:Vector, arrout:Vector, len:int):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN-->Reverse transformation of the points vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">arrin</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/arrin-->initial vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/arrin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">arrout</span>:Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/arrout-->vector receiver.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/arrout--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">len</span>:int</code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/len-->Number of points in the first vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointsTransposedN/len--></td>
+</tr>
+</table>
+</div>
+<a name="transformPointTransposed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformPointTransposed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformPointTransposed(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointTransposed-->Perform the reverse point transformation (square matrix contains only the rotations). <!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointTransposed--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vin</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointTransposed/vin-->Entry point.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointTransposed/vin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vout</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformPointTransposed/vout-->In this vector is the result of the transformation is written.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformPointTransposed/vout--></td>
+</tr>
+</table>
+</div>
+<a name="transformVector()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformVector</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformVector(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformVector-->Transforms specified vector without shifting the matrix center.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVector--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vin</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformVector/vin-->Input vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVector/vin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vout</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformVector/vout-->Vector that stores the result of transformation.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVector/vout--></td>
+</tr>
+</table>
+</div>
+<a name="transformVectorTransposed()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">transformVectorTransposed</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function transformVectorTransposed(vin:<a href="Vector3.html">Vector3</a>, vout:<a href="Vector3.html">Vector3</a>):void</code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/transformVectorTransposed-->Transforms specified vector without shifting the matrix center.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVectorTransposed--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">vin</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformVectorTransposed/vin-->Input vector.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVectorTransposed/vin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">vout</span>:<a href="Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.math:Matrix4/transformVectorTransposed/vout-->Vector that stores the result of transformation.<!--translator-end:alternativa.physicsengine.math:Matrix4/transformVectorTransposed/vout--></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="IDENTITY"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">IDENTITY</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public static const IDENTITY:<a href="../math/Matrix4.html">Matrix4</a></code><p><!--translator-start:alternativa.physicsengine.math:Matrix4/IDENTITY-->The identity matrix <br>  1 0 0 0 <br>  0 1 0 0 <br>  0 0 1 0<!--translator-end:alternativa.physicsengine.math:Matrix4/IDENTITY--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->

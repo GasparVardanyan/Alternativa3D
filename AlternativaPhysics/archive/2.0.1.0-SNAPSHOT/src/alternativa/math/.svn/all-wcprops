@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/34889/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/math
+END
+Quaternion.as
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/!svn/ver/34246/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/math/Quaternion.as
+END
+Vector3.as
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/34889/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/math/Vector3.as
+END
+Matrix3.as
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/34889/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/math/Matrix3.as
+END
+Matrix4.as
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/34889/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/math/Matrix4.as
+END

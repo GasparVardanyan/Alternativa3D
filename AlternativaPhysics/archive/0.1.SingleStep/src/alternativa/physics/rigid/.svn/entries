@@ -1,0 +1,79 @@
+8
+
+dir
+46043
+http://svndev.alternativaplatform.com/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid
+http://svndev.alternativaplatform.com
+
+
+
+2009-04-07T09:35:01.456741Z
+10598
+mike
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9e2387a-1f3e-40e2-b57f-9df5970a2fa5
+
+Body.as
+file
+
+
+
+
+2010-10-28T04:32:39.000000Z
+054ce48aa4a6b58d010a61fca1448f64
+2009-04-07T08:34:06.342994Z
+10587
+mike
+
+BodyState.as
+file
+
+
+
+
+2010-10-28T04:32:39.000000Z
+39e60c552e4b47f3a7bb578912d14e77
+2009-04-01T12:25:29.638016Z
+10301
+mike
+
+RigidWorld.as
+file
+
+
+
+
+2010-10-28T04:32:39.000000Z
+49077d27546da688098f07063affb1f5
+2009-04-07T09:35:01.456741Z
+10598
+mike
+
+primitives
+dir
+
+BodyMaterial.as
+file
+
+
+
+
+2010-10-28T04:32:39.000000Z
+49c7a55b5b26fdb03a60f24bac460f53
+2009-04-07T08:34:06.342994Z
+10587
+mike
+

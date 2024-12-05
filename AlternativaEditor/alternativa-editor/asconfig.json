@@ -1,0 +1,10 @@
+{
+    "config": "air",
+    "compilerOptions": {
+        "source-path": ["src"],
+        "library-path": ["libs"],
+        "output": "build/AlternativaEditor.swf"
+    },
+    "mainClass": "AlternativaEditor",
+    "application": "AlternativaEditor-app.xml"
+}

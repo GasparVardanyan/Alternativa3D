@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives
+END
+CollisionTriangle.as
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives/CollisionTriangle.as
+END
+CollisionSphere.as
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives/CollisionSphere.as
+END
+CollisionBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives/CollisionBox.as
+END
+CollisionPrimitive.as
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives/CollisionPrimitive.as
+END
+CollisionRect.as
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/collision/primitives/CollisionRect.as
+END

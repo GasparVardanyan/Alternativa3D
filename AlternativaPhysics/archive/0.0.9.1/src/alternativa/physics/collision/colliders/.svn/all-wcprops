@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders
+END
+BoxSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxSphereCollider.as
+END
+BoxBoxCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxBoxCollider.as
+END
+BoxRectCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxRectCollider.as
+END
+SpherePlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/SpherePlaneCollider.as
+END
+BoxCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxCollider.as
+END
+BoxPlaneCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxPlaneCollider.as
+END
+SphereSphereCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/SphereSphereCollider.as
+END
+BoxTriangleCollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/!svn/ver/29407/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.1/src/alternativa/physics/collision/colliders/BoxTriangleCollider.as
+END

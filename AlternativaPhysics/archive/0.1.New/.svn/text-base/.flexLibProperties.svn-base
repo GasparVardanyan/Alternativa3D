@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="alternativa.physics.rigid.Body"/>
+    <classEntry path="alternativa.physics.rigid.ContactResolver"/>
+    <classEntry path="alternativa.physics.rigid.primitives.RigidBox"/>
+    <classEntry path="alternativa.physics.rigid.BodyState"/>
+    <classEntry path="alternativa.physics.rigid.BodyForceRegistry"/>
+    <classEntry path="alternativa.physics.rigid.generators.BoxWidthPlaneContactGenerator"/>
+    <classEntry path="alternativa.physics.rigid.Contact"/>
+    <classEntry path="alternativa.physics.rigid.ContactGenerator"/>
+    <classEntry path="alternativa.physics.rigid.primitives.RigidSphere"/>
+    <classEntry path="alternativa.physics.registry.BodyForceRegistry"/>
+    <classEntry path="alternativa.physics.rigid.generators.SphereWithPlaneContactGenerator"/>
+    <classEntry path="alternativa.physics.rigid.BodyMaterial"/>
+    <classEntry path="alternativa.physics.force.IBodyForceGenerator"/>
+    <classEntry path="alternativa.physics.registry.BodyForceRegistration"/>
+    <classEntry path="alternativa.physics.rigid.BodyForceRegistration"/>
+    <classEntry path="alternativa.physics.rigid.RigidWorld"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

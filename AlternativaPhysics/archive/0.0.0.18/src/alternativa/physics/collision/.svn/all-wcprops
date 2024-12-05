@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/!svn/ver/4398/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision
+END
+CollisionBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionBox.as
+END
+CollisionPrimitive.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/4375/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionPrimitive.as
+END
+CollisionData.as
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionData.as
+END
+CollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/4398/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/CollisionDetector.as
+END

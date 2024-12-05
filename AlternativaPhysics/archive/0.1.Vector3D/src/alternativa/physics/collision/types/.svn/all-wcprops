@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/types
+END
+BoundBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/types/BoundBox.as
+END
+RayIntersection.as
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/types/RayIntersection.as
+END
+Ray.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/types/Ray.as
+END

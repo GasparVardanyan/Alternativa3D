@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/9697/platform/clients/fp9/libraries/AlternativaPhysics/branches/0.1.New/src/alternativa/physics/rigid/generators
+END
+SphereWithPlaneContactGenerator.as
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/!svn/ver/9697/platform/clients/fp9/libraries/AlternativaPhysics/branches/0.1.New/src/alternativa/physics/rigid/generators/SphereWithPlaneContactGenerator.as
+END
+BoxWidthPlaneContactGenerator.as
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/9562/platform/clients/fp9/libraries/AlternativaPhysics/branches/0.1.New/src/alternativa/physics/rigid/generators/BoxWidthPlaneContactGenerator.as
+END

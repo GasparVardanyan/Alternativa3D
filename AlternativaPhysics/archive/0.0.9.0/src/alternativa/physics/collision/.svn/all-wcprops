@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision
+END
+ICollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/ICollisionDetector.as
+END
+CollisionKdNode.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/CollisionKdNode.as
+END
+CollisionKdTree2D.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/CollisionKdTree2D.as
+END
+IRayCollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/IRayCollisionPredicate.as
+END
+IBodyCollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/IBodyCollisionPredicate.as
+END
+CollisionPrimitive.as
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/CollisionPrimitive.as
+END
+KdTreeCollisionDetector.as
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/KdTreeCollisionDetector.as
+END
+ICollisionPredicate.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/ICollisionPredicate.as
+END
+ICollider.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/ICollider.as
+END
+CollisionKdTree.as
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/collision/CollisionKdTree.as
+END

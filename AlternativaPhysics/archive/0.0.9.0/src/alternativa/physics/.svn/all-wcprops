@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics
+END
+Body.as
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/Body.as
+END
+BodyState.as
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/BodyState.as
+END
+CollisionPrimitiveListItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/CollisionPrimitiveListItem.as
+END
+CollisionPrimitiveList.as
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/CollisionPrimitiveList.as
+END
+PhysicsScene.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/PhysicsScene.as
+END
+PhysicsUtils.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/PhysicsUtils.as
+END
+altphysics.as
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/altphysics.as
+END
+ContactPoint.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/ContactPoint.as
+END
+BodyListItem.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/BodyListItem.as
+END
+BodyList.as
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/BodyList.as
+END
+Contact.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/Contact.as
+END
+BodyMaterial.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/28758/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.9.0/src/alternativa/physics/BodyMaterial.as
+END

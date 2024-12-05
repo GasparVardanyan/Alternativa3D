@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/5193/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid
+END
+RigidBodyContactGenerator.as
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/!svn/ver/4732/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/RigidBodyContactGenerator.as
+END
+BodyForceRegistry.as
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/!svn/ver/4375/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/BodyForceRegistry.as
+END
+RigidWorld.as
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/!svn/ver/4741/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/RigidWorld.as
+END
+BodyForceRegistration.as
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/!svn/ver/4375/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/BodyForceRegistration.as
+END
+RigidBodyContact.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/4813/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/RigidBodyContact.as
+END
+RigidBodyContactResolver.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/4270/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/RigidBodyContactResolver.as
+END
+RigidBody.as
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/!svn/ver/5193/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/rigid/RigidBody.as
+END

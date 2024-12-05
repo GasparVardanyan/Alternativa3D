@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/!svn/ver/34246/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/types
+END
+BoundBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/!svn/ver/19633/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/types/BoundBox.as
+END
+RayHit.as
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/!svn/ver/34246/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/types/RayHit.as
+END
+Ray.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/30874/platform/clients/fp10/libraries/AlternativaPhysics/trunk/src/alternativa/physics/collision/types/Ray.as
+END

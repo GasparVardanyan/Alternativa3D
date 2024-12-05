@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/types
+END
+Quaternion.as
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/types/Quaternion.as
+END
+Vector3.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/types/Vector3.as
+END
+Matrix3.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/types/Matrix3.as
+END
+Matrix4.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/14887/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.1.0/src/alternativa/physics/types/Matrix4.as
+END

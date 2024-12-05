@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Panel title="Props" xmlns:mx="http://www.adobe.com/2006/mxml" width="100%" height="100%" focusEnabled="false" >
+	<mx:Script>
+		<![CDATA[
+			import mx.core.ScrollPolicy;
+			import gui.events.PropListEvent;
+			import gui.events.PropListEvent;
+			import mx.events.ListEvent;
+			import mx.core.BitmapAsset;
+			import mx.states.SetStyle;
+			import mx.controls.Label;
+			import mx.controls.Image;
+			import mx.collections.ArrayCollection;
+			import mx.controls.TileList;
+			import mx.controls.Button;
+			import mx.containers.Canvas;
+			
+						
+					
+			private var _groupName:Array = new Array();
+			private var _group:Array = new Array();
+			private var dataProviders:Array = new Array(); 
+			public var selectedItem:* = null;
+			
+			public function addProp(group:String, name:String, img:DisplayObject, object:*=null):void {
+				var groupIndex:int = _groupName.indexOf(group)
+				var panel:Canvas;
+				var list:TileList; 
+				var dp:ArrayCollection;
+				
+				if (groupIndex>=0){
+					list = _group[groupIndex] as TileList;
+					dp = dataProviders[groupIndex] as ArrayCollection;
+				} else {
+					panel = new Canvas()
+					panel.label = group;
+					panel.autoLayout=true;
+					panel.percentHeight = panel.percentWidth = 100;
+					panel.horizontalScrollPolicy = ScrollPolicy.OFF;
+					
+					accordion.addChild(panel);
+					
+					list = new TileList();
+					list.percentHeight = list.percentWidth = 100;
+					list.focusEnabled = false;
+					
+					
+
+					dp = new ArrayCollection();
+					dataProviders.push(dp);
+					
+					list.dataProvider = dp;
+					
+					list.itemRenderer = new ClassFactory(ImageItemRenderer);
+					list.addEventListener(ListEvent.ITEM_CLICK, changeSelected);
+					
+					_group.push(list);
+					_groupName.push(group);
+					
+					panel.addChild(list);
+					
+				}
+				
+				var picture:Sprite = new Sprite();
+				picture.addChild(img);
+				dp.addItem({label:name, image:picture, obj:object});
+			
+				
+			}
+			public function deleteAllProps():void {
+				var list:TileList;
+				for (var i:int = 0; i<_group.length; i++) {
+					list = _group[i] as TileList;
+					list.removeEventListener(ListEvent.ITEM_CLICK, changeSelected);
+				}
+				
+				while (accordion.numChildren>0){
+					accordion.removeChildAt(0);
+				}
+				
+				dataProviders = new Array();
+				_group = new Array();
+				_groupName = new Array(); 
+				
+			}
+			
+			private function changeSelected(e:ListEvent):void {
+				dispatchEvent(new PropListEvent(0, e.itemRenderer.data.obj));
+				selectedItem = e.itemRenderer.data.obj;
+			}
+		]]>
+	</mx:Script>
+	<mx:Accordion width="100%" height="100%" id="accordion">
+		
+	</mx:Accordion>
+</mx:Panel>
+

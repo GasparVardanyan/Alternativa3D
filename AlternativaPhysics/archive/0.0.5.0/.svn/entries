@@ -1,0 +1,85 @@
+8
+
+dir
+46043
+http://svndev.alternativaplatform.com/platform/clients/fp10/libraries/AlternativaPhysics/tags/0.0.5.0
+http://svndev.alternativaplatform.com
+
+
+
+2009-09-10T20:48:12.872816Z
+19726
+mike
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9e2387a-1f3e-40e2-b57f-9df5970a2fa5
+
+META-INF
+dir
+
+.flexLibProperties
+file
+
+
+
+
+2010-10-28T04:32:41.000000Z
+3ac589a87a5983147605d64c4c08e3c2
+2009-07-17T13:10:32.947052Z
+16516
+mike
+
+.project
+file
+
+
+
+
+2010-10-28T04:32:41.000000Z
+1e90cc68b52b93173b2b5de88eb5c3a3
+2009-04-20T17:15:55.260110Z
+11541
+mike
+
+src
+dir
+
+pom.xml
+file
+
+
+
+
+2010-10-28T04:32:41.000000Z
+ea7cfd8913a0d83216b1c06b9f8379a8
+2009-09-10T20:48:12.872816Z
+19726
+mike
+
+.actionScriptProperties
+file
+
+
+
+
+2010-10-28T04:32:41.000000Z
+918335cb945c3f8866aeb8e6cfd1b110
+2009-07-20T09:23:34.939854Z
+16623
+mike
+
+.settings
+dir
+

@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/10598/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid
+END
+Body.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid/Body.as
+END
+BodyState.as
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid/BodyState.as
+END
+RigidWorld.as
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/!svn/ver/10598/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid/RigidWorld.as
+END
+BodyMaterial.as
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/!svn/ver/10588/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.SingleStep/src/alternativa/physics/rigid/BodyMaterial.as
+END

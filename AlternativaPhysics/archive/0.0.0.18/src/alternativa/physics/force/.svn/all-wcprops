@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/!svn/ver/4732/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force
+END
+ParticleAnchoredBungee.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleAnchoredBungee.as
+END
+ParticleBuoyancy.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleBuoyancy.as
+END
+RigidBodySpring.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/RigidBodySpring.as
+END
+ParticleDrag.as
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleDrag.as
+END
+IParticelForceGenerator.as
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/IParticelForceGenerator.as
+END
+RigidBodyGravity.as
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/RigidBodyGravity.as
+END
+ParticleSpring.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleSpring.as
+END
+RigidBodyAnchoredBungee.as
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/!svn/ver/4732/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/RigidBodyAnchoredBungee.as
+END
+ParticleBungee.as
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleBungee.as
+END
+ParticleGravity.as
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleGravity.as
+END
+ParticleAnchoredSpring.as
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/ParticleAnchoredSpring.as
+END
+IRigidBodyForceGenerator.as
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/!svn/ver/4196/platform/clients/fp9/libraries/AlternativaPhysics/trunk/src/alternativa/physics/force/IRigidBodyForceGenerator.as
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives
+END
+CollisionTriangle.as
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives/CollisionTriangle.as
+END
+CollisionSphere.as
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives/CollisionSphere.as
+END
+CollisionBox.as
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives/CollisionBox.as
+END
+CollisionPrimitive.as
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/!svn/ver/13892/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives/CollisionPrimitive.as
+END
+CollisionRect.as
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/!svn/ver/13893/platform/clients/fp10/libraries/AlternativaPhysics/branches/0.1.Vector3D/src/alternativa/physics/collision/primitives/CollisionRect.as
+END
