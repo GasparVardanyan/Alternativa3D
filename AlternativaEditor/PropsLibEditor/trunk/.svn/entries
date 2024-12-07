@@ -1,0 +1,86 @@
+8
+
+dir
+46043
+http://svndev.alternativaplatform.com/platform/tools/3d/PropsLibEditor/trunk
+http://svndev.alternativaplatform.com
+
+
+
+2010-05-19T04:46:10.235842Z
+34508
+mike
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9e2387a-1f3e-40e2-b57f-9df5970a2fa5
+
+.project
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+54d8dda4f4feae2cba5a8a60330d2f1d
+2010-05-18T20:43:24.056166Z
+34494
+mike
+
+src
+dir
+
+libs
+dir
+
+.flexProperties
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+aa6a073d2cb3b2f7e5d2dd4e33f2c90f
+2010-05-18T20:43:24.056166Z
+34494
+mike
+
+.actionScriptProperties
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+2461defc9ff90c487ddcf1d773d839bf
+2010-05-18T20:43:24.056166Z
+34494
+mike
+
+.settings
+dir
+
+cert.p12
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+13c3197740a688904e7b5178b688aa5d
+2010-05-18T20:43:24.056166Z
+34494
+mike
+has-props
+

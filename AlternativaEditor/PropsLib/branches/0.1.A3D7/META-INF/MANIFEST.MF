@@ -1,0 +1,2 @@
+Bundle-Name: platform.clients.fp10.libraries.PropsLib
+

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties version="1">
+  <includeClasses>
+    <classEntry path="alternativa.editor.propslib.loaders.ObjectLoader"/>
+    <classEntry path="alternativa.editor.propslib.PropsLibrary"/>
+    <classEntry path="alternativa.editor.propslib.loaders.SpriteLoader"/>
+    <classEntry path="alternativa.editor.propslib.events.PropLibProgressEvent"/>
+    <classEntry path="alternativa.editor.propslib.PropLOD"/>
+    <classEntry path="alternativa.editor.propslib.PropGroup"/>
+    <classEntry path="alternativa.editor.propslib.PropState"/>
+    <classEntry path="alternativa.editor.propslib.StatelessData"/>
+    <classEntry path="alternativa.editor.propslib.PropObject"/>
+    <classEntry path="alternativa.editor.propslib.loaders.MeshLoader"/>
+    <classEntry path="alternativa.editor.propslib.PropData"/>
+    <classEntry path="alternativa.editor.propslib.PropMesh"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

@@ -1,0 +1,70 @@
+8
+
+dir
+46043
+http://svndev.alternativaplatform.com/platform/tools/3d/PropsLib/trunk
+http://svndev.alternativaplatform.com
+
+
+
+2010-05-14T07:07:32.878012Z
+34419
+mike
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9e2387a-1f3e-40e2-b57f-9df5970a2fa5
+
+.flexLibProperties
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+7ac68a90883312f5886263fb3d0e9323
+2010-05-14T07:07:32.878012Z
+34419
+mike
+
+.project
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+f5ec8fcc2fa961cd0c5c9efffb5cfe54
+2009-02-25T13:09:48.842000Z
+8248
+mike
+
+src
+dir
+
+.actionScriptProperties
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+5aa25bcad437b530a2898dbe68adfcf0
+2010-05-14T07:07:32.878012Z
+34419
+mike
+
+.settings
+dir
+

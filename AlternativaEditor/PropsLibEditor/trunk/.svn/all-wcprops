@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/!svn/ver/34508/platform/tools/3d/PropsLibEditor/trunk
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/34494/platform/tools/3d/PropsLibEditor/trunk/.project
+END
+.flexProperties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/!svn/ver/34494/platform/tools/3d/PropsLibEditor/trunk/.flexProperties
+END
+.actionScriptProperties
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/!svn/ver/34494/platform/tools/3d/PropsLibEditor/trunk/.actionScriptProperties
+END
+cert.p12
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/!svn/ver/34494/platform/tools/3d/PropsLibEditor/trunk/cert.p12
+END

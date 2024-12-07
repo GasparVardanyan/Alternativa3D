@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/!svn/ver/34419/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib
+END
+PropGroup.as
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropGroup.as
+END
+PropMesh.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropMesh.as
+END
+PropLOD.as
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropLOD.as
+END
+PropState.as
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropState.as
+END
+StatelessData.as
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/StatelessData.as
+END
+PropObject.as
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/!svn/ver/8698/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropObject.as
+END
+PropsLibrary.as
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/!svn/ver/34419/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropsLibrary.as
+END
+PropData.as
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/!svn/ver/9973/platform/tools/3d/PropsLib/trunk/src/alternativa/editor/propslib/PropData.as
+END

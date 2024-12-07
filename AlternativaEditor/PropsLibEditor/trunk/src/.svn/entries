@@ -1,0 +1,58 @@
+8
+
+dir
+46043
+http://svndev.alternativaplatform.com/platform/tools/3d/PropsLibEditor/trunk/src
+http://svndev.alternativaplatform.com
+
+
+
+2010-05-19T04:46:10.235842Z
+34508
+mike
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9e2387a-1f3e-40e2-b57f-9df5970a2fa5
+
+assets
+dir
+
+alternativa
+dir
+
+PropsLibEditor.mxml
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+20535cd6154d3f449695ce7bded45d82
+2010-05-19T04:46:10.235842Z
+34508
+mike
+
+PropsLibEditor-app.xml
+file
+
+
+
+
+2010-10-28T04:25:35.000000Z
+e6b1cb25e941116f8fe496dbdc9bed57
+2010-05-19T04:46:10.235842Z
+34508
+mike
+

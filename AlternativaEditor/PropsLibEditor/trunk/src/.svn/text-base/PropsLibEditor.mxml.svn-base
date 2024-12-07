@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:WindowedApplication xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" applicationComplete="onApplicationComplete()">
+	<mx:Script>
+		<![CDATA[
+			import alternativa.proplib.PropLibValidator;
+			import mx.events.FlexNativeMenuEvent;
+			
+			private var file:File = new File();
+			private var validator:PropLibValidator = new PropLibValidator();
+			
+			/**
+			 * 
+			 */
+			private function onApplicationComplete():void {
+				file.addEventListener(Event.SELECT, onFileSelected);
+			}
+			
+			/**
+			 * 
+			 */
+			private function onFileSelected(e:Event):void {
+				output.text = "";
+				validator.validate(file);
+				if (validator.errors.length > 0)
+					for each (var s:String in validator.errors)
+						output.text += s + "\n";
+				else
+					output.text = "Library is correct";
+			}
+			
+			/**
+			 * Выбор пункта меню.
+			 */
+			private function menuHandler(e:FlexNativeMenuEvent):void {
+				var handler:Function = e.item.handler;
+				if (handler != null)
+					handler.call(this, e.nativeMenuItem);
+			}
+	
+			/**
+			 * 
+			 */
+			private function onMenuOpenClick(item:NativeMenuItem):void {
+				file.browseForOpen("Open prop library", [new FileFilter("XML files (*.xml)", "*.xml")]);
+			}
+			
+		]]>
+	</mx:Script>
+	
+	<mx:menu>
+		<mx:FlexNativeMenu id="menu" dataProvider="{menuData}" showRoot="false" itemClick="menuHandler(event);"/>
+	</mx:menu>
+
+	<mx:Model id="menuData">
+		<root>
+			<children label="File">
+				<children label="Open" keyEquivalent="o" ctrlKey="true" handler="{this.onMenuOpenClick}"/>
+			</children>
+		</root>
+	</mx:Model>
+	
+	<mx:TextArea id="output" width="100%" height="100%">
+		
+	</mx:TextArea>
+	
+</mx:WindowedApplication>
