@@ -1,0 +1,476 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<link href="/favicon.ico" rel="icon">
+<link rel="stylesheet" href="../../../style.css" type="text/css" media="screen">
+<link rel="stylesheet" href="../../../print.css" type="text/css" media="print">
+<meta content="PhysicsScene,alternativa.physicsengine.physics.PhysicsScene,MAX_BODIES,gravity,add,addConstraint,freezeAll,getBodiesInSphere,raycast,raycastStatic,remove,removeConstraint,testCollision,update" name="keywords">
+<title>alternativa.physicsengine.physics.PhysicsScene</title>
+</head>
+<body>
+<script type="text/javascript" language="javascript" src="../../../asdoc.js"></script><script type="text/javascript" language="javascript" src="../../../cookies.js"></script><script type="text/javascript" language="javascript">
+<!--
+				asdocTitle = 'PhysicsScene - API Documentation';
+				var baseRef = '../../../';
+				window.onload = configPage;
+			--></script>
+<table style="display:none" id="titleTable" cellspacing="0" cellpadding="0" class="titleTable">
+<tr>
+<td align="left" class="titleTableTitle">API Documentation</td><td align="right" class="titleTableTopNav"><a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../package-summary.html">All&nbsp;Packages</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../all-classes.html')" href="../../../class-summary.html">All&nbsp;Classes</a>&nbsp;|&nbsp;<a onclick="loadClassListFrame('../../../index-list.html')" href="../../../all-index-A.html">Index</a>&nbsp;|&nbsp;<a href="../../../index.html?alternativa/physicsengine/physics/PhysicsScene.html&amp;alternativa/physicsengine/physics/class-list.html" id="framesLink1">Frames</a><a onclick="parent.location=document.location" href="" style="display:none" id="noFramesLink1">No&nbsp;Frames</a></td><td rowspan="3" align="right" class="titleTableLogo"><img alt="Adobe Logo" title="Adobe Logo" class="logoImage" src="../../../images/logo.jpg"></td>
+</tr>
+<tr class="titleTableRow2">
+<td align="left" id="subTitle" class="titleTableSubTitle">Class&nbsp;PhysicsScene</td><td align="right" id="subNav" class="titleTableSubNav"><a href="#propertySummary">Properties</a>&nbsp;| <a href="#methodSummary">Methods</a>&nbsp;| <a href="#constantSummary">Constants</a></td>
+</tr>
+<tr class="titleTableRow3">
+<td colspan="2">&nbsp;</td>
+</tr>
+</table>
+<script type="text/javascript" language="javascript">
+<!--
+if (!isEclipse() || window.name != ECLIPSE_FRAME_NAME) {titleBar_setSubTitle("Class PhysicsScene"); titleBar_setSubNav(true,true,false,false,false,false,true,false,false,false,false,false,false,false);}
+--></script>
+<div class="MainContent">
+<table cellspacing="0" cellpadding="0" class="classHeaderTable">
+<tr>
+<td class="classHeaderTableLabel">Package</td><td><a onclick="javascript:loadClassListFrame('class-list.html')" href="package-detail.html">alternativa.physicsengine.physics</a></td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Class</td><td class="classSignature">public class PhysicsScene</td>
+</tr>
+<tr>
+<td class="classHeaderTableLabel">Inheritance</td><td class="inheritanceList">PhysicsScene <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> <a href="../events/PhysicsEventDispatcher.html">PhysicsEventDispatcher</a> <img class="inheritArrow" alt="Inheritance" title="Inheritance" src="../../../images/inherit-arrow.gif"> alternativa.physicsengine.events.PhysicsEventRegistryDispatcher</td>
+</tr>
+</table>
+<p></p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene-->Class implements the physical simulation of the rigid bodies behavior.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene--><p></p>
+<br>
+<hr>
+</div>
+<a name="propertySummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Properties</div>
+<table id="summaryTableProperty" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Property</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#gravity">gravity</a> : <a href="../math/Vector3.html">Vector3</a>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/gravity/get-short-->Gravity vector.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/gravity/get-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+</table>
+</div>
+<a name="methodSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Methods</div>
+<table id="summaryTableMethod" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Method</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#PhysicsScene()">PhysicsScene</a>(config:<a href="../configurations/PhysicsConfiguration.html">PhysicsConfiguration</a> = null)</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene-short-->Create new physical scene.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#add()">add</a>(sceneObject:<a href="types/SceneObject.html">SceneObject</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/add-short-->Add body to simulation.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/add-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#addConstraint()">addConstraint</a>(constrain:ImpulseConstraint):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/addConstraint-short-->Add a constrain.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/addConstraint-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#freezeAll()">freezeAll</a>():void</div>
+<div class="summaryTableDescription"></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#getBodiesInSphere()">getBodiesInSphere</a>(center:<a href="../math/Vector3.html">Vector3</a>, radius:Number, searchInDynamicBodies:Boolean = true, searchInStaticBodies:Boolean = false):Vector</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere-short-->Return the bodies in sphere.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#raycast()">raycast</a>(origin:<a href="../math/Vector3.html">Vector3</a>, direction:<a href="../math/Vector3.html">Vector3</a>, collisionMask:int, maxTime:Number, filter:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a>, result:<a href="../geometry/collision/types/RayHit.html">RayHit</a>):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast-short-->Checks whether the ray intersection with the physical geometry.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#raycastStatic()">raycastStatic</a>(origin:<a href="../math/Vector3.html">Vector3</a>, direction:<a href="../math/Vector3.html">Vector3</a>, collisionMask:int, maxTime:Number, filter:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a>, result:<a href="../geometry/collision/types/RayHit.html">RayHit</a>):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic-short-->Checks whether the ray intersection with the static physical geometry.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#remove()">remove</a>(sceneObject:<a href="types/SceneObject.html">SceneObject</a>):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/remove-short-->Remove scene object from the simulation.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/remove-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#removeConstraint()">removeConstraint</a>(c:ImpulseConstraint):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/removeConstraint-short-->Remove constrain.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/removeConstraint-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#testCollision()">testCollision</a>(prim1:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a>, prim2:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a>):Boolean</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/testCollision-short-->Checks for the intersection between primitives.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/testCollision-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol">
+<div class="summarySignature">
+<a class="signatureLink" href="#update()">update</a>(delta:int):void</div>
+<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/update-short-->Perform one step of the simulation updating all scene objects states.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/update-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+</table>
+</div>
+<a name="constantSummary"></a>
+<div class="summarySection">
+<div class="summaryTableTitle">Public Constants</div>
+<table id="summaryTableConstant" class="summaryTable " cellpadding="3" cellspacing="0">
+<tr>
+<th>&nbsp;</th><th colspan="2">Constant</th><th class="summaryTableOwnerCol">Defined&nbsp;by</th>
+</tr>
+<tr class="">
+<td class="summaryTablePaddingCol">&nbsp;</td><td class="summaryTableInheritanceCol">&nbsp;</td><td class="summaryTableSignatureCol"><a class="signatureLink" href="#MAX_BODIES">MAX_BODIES</a> : int = 1000<div class="summaryTableDescription"><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/MAX_BODIES-short-->Maximim number of bodies at scene.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/MAX_BODIES-short--></div>
+</td><td class="summaryTableOwnerCol">PhysicsScene</td>
+</tr>
+</table>
+</div>
+<script type="text/javascript" language="javascript">
+<!--
+showHideInherited();
+--></script>
+<div class="MainContent">
+<a name="propertyDetail"></a>
+<div class="detailSectionHeader">Property detail</div>
+<a name="gravity"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">gravity</td><td class="detailHeaderType">property</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>gravity:<a href="../math/Vector3.html">Vector3</a></code>&nbsp;&nbsp;[read-write]<p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/gravity/get-->Gravity vector.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/gravity/get--></p><span class="label">Implementation</span>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function get gravity():<a href="../math/Vector3.html">Vector3</a></code>
+<br>
+<code>&nbsp;&nbsp;&nbsp;&nbsp;public function set gravity(value:<a href="../math/Vector3.html">Vector3</a>):void</code>
+<br>
+</div>
+<a name="constructorDetail"></a>
+<div class="detailSectionHeader">Constructor detail</div>
+<a name="PhysicsScene()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">PhysicsScene</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">constructor</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function PhysicsScene(config:<a href="../configurations/PhysicsConfiguration.html">PhysicsConfiguration</a> = null)</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene-->Create new physical scene.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">config</span>:<a href="../configurations/PhysicsConfiguration.html">PhysicsConfiguration</a></code> (default = <code>null</code>)<code></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene/config-->Physics configuration.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/PhysicsScene/config--></td>
+</tr>
+</table>
+</div>
+<a name="methodDetail"></a>
+<div class="detailSectionHeader">Method detail</div>
+<a name="add()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">add</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function add(sceneObject:<a href="types/SceneObject.html">SceneObject</a>):void</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/add-->Add body to simulation.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/add--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sceneObject</span>:<a href="types/SceneObject.html">SceneObject</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/add/sceneObject-->Scene object.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/add/sceneObject--></td>
+</tr>
+</table>
+</div>
+<a name="addConstraint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">addConstraint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function addConstraint(constrain:ImpulseConstraint):void</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/addConstraint-->Add a constrain.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/addConstraint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">constrain</span>:ImpulseConstraint</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/addConstraint/constrain-->Constrain.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/addConstraint/constrain--></td>
+</tr>
+</table>
+</div>
+<a name="freezeAll()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">freezeAll</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function freezeAll():void</code>
+</div>
+<a name="getBodiesInSphere()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">getBodiesInSphere</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function getBodiesInSphere(center:<a href="../math/Vector3.html">Vector3</a>, radius:Number, searchInDynamicBodies:Boolean = true, searchInStaticBodies:Boolean = false):Vector</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere-->Return the bodies in sphere.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">center</span>:<a href="../math/Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/center-->Sphere center.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/center--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">radius</span>:Number</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/radius-->Radius of sphere.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/radius--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">searchInDynamicBodies</span>:Boolean</code> (default = <code>true</code>)<code></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/searchInDynamicBodies-->Flag of search in dinamic bodies.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/searchInDynamicBodies--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">searchInStaticBodies</span>:Boolean</code> (default = <code>false</code>)<code></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/searchInStaticBodies-->Flag of search in static bodies.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere/searchInStaticBodies--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Vector</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere-return-->List of bodies with distances.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/getBodiesInSphere-return--></td>
+</tr>
+</table>
+</div>
+<a name="raycast()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">raycast</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function raycast(origin:<a href="../math/Vector3.html">Vector3</a>, direction:<a href="../math/Vector3.html">Vector3</a>, collisionMask:int, maxTime:Number, filter:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a>, result:<a href="../geometry/collision/types/RayHit.html">RayHit</a>):Boolean</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast-->Checks whether the ray intersection with the physical geometry. The detector contains a set of primitives that are checked. In the case of multiple intersections, the method return intersection that nearest to the top of the ray.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:<a href="../math/Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/origin-->Ray origin (at global coordinates).<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/origin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">direction</span>:<a href="../math/Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/direction-->Direction vector of the ray in global coordinates. The length of the vector must be nonzero.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/direction--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">collisionMask</span>:int</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/collisionMask-->Intersections filter mask by groups.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/collisionMask--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">maxTime</span>:Number</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/maxTime-->Length of the inspected segment. Unit is one direction vector.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/maxTime--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">filter</span>:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/filter-->Filter of intersections.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/filter--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">result</span>:<a href="../geometry/collision/types/RayHit.html">RayHit</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast/result-->Parameter stores the information about the collision in the case of a positive test. Otherwise, the preservation of the initial data in the passed structure is not guaranteed.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast/result--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycast-return-->true if intersect exists. Otherwise, false.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycast-return--></td>
+</tr>
+</table>
+</div>
+<a name="raycastStatic()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">raycastStatic</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function raycastStatic(origin:<a href="../math/Vector3.html">Vector3</a>, direction:<a href="../math/Vector3.html">Vector3</a>, collisionMask:int, maxTime:Number, filter:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a>, result:<a href="../geometry/collision/types/RayHit.html">RayHit</a>):Boolean</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic-->Checks whether the ray intersection with the static physical geometry. The detector contains a set of primitives that are checked. In the case of multiple intersections, the method return intersection that nearest to the top of the ray.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">origin</span>:<a href="../math/Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/origin-->Ray origin (at global coordinates).<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/origin--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">direction</span>:<a href="../math/Vector3.html">Vector3</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/direction-->Direction vector of the ray in global coordinates. The length of the vector must be nonzero.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/direction--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">collisionMask</span>:int</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/collisionMask-->Intersections filter mask by groups.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/collisionMask--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">maxTime</span>:Number</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/maxTime-->Length of the inspected segment. Unit is one direction vector.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/maxTime--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">filter</span>:<a href="../geometry/collision/IRaycastFilter.html">IRaycastFilter</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/filter-->Filter of intersections.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/filter--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">result</span>:<a href="../geometry/collision/types/RayHit.html">RayHit</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/result-->Parameter stores the information about the collision in the case of a positive test. Otherwise, the preservation of the initial data in the passed structure is not guaranteed.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic/result--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/raycastStatic-return-->true if intersect exists. Otherwise, false.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/raycastStatic-return--></td>
+</tr>
+</table>
+</div>
+<a name="remove()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">remove</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function remove(sceneObject:<a href="types/SceneObject.html">SceneObject</a>):void</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/remove-->Remove scene object from the simulation.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/remove--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">sceneObject</span>:<a href="types/SceneObject.html">SceneObject</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/remove/sceneObject-->Scene object.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/remove/sceneObject--></td>
+</tr>
+</table>
+</div>
+<a name="removeConstraint()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">removeConstraint</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function removeConstraint(c:ImpulseConstraint):Boolean</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/removeConstraint-->Remove constrain.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/removeConstraint--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">c</span>:ImpulseConstraint</code></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code></td>
+</tr>
+</table>
+</div>
+<a name="testCollision()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">testCollision</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function testCollision(prim1:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a>, prim2:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a>):Boolean</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/testCollision-->Checks for the intersection between primitives.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/testCollision--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">prim1</span>:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/testCollision/prim1-->First primitive.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/testCollision/prim1--></td>
+</tr>
+<tr>
+<td class="paramSpacer">&nbsp;</td>
+</tr>
+<tr>
+<td width="20px"></td><td><code><span class="label">prim2</span>:<a href="../geometry/collision/CollisionPrimitive.html">CollisionPrimitive</a></code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/testCollision/prim2-->Second primitive.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/testCollision/prim2--></td>
+</tr>
+</table>
+<p></p>
+<span class="label">Returns</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20"></td><td><code>Boolean</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/testCollision-return-->true if primitives intersect. Otherwise, false.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/testCollision-return--></td>
+</tr>
+</table>
+</div>
+<a name="update()"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">update</td><td class="detailHeaderParens">()</td><td class="detailHeaderType">method</td><td class="detailHeaderRule">&nbsp;</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public function update(delta:int):void</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/update-->Perform one step of the simulation updating all scene objects states.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/update--></p><span class="label">Parameters</span>
+<table border="0" cellspacing="0" cellpadding="0">
+<tr>
+<td width="20px"></td><td><code><span class="label">delta</span>:int</code> &mdash; <!--translator-start:alternativa.physicsengine.physics:PhysicsScene/update/delta-->Duration of the simulation step.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/update/delta--></td>
+</tr>
+</table>
+</div>
+<a name="constantDetail"></a>
+<div class="detailSectionHeader">Constant detail</div>
+<a name="MAX_BODIES"></a>
+<table cellspacing="0" cellpadding="0" class="detailHeader">
+<tr>
+<td class="detailHeaderName">MAX_BODIES</td><td class="detailHeaderType">constant</td>
+</tr>
+</table>
+<div class="detailBody">
+<code>public const MAX_BODIES:int = 1000</code><p><!--translator-start:alternativa.physicsengine.physics:PhysicsScene/MAX_BODIES-->Maximim number of bodies at scene.<!--translator-end:alternativa.physicsengine.physics:PhysicsScene/MAX_BODIES--></p></div>
+<br>
+<br>
+<hr>
+<br>
+<p></p>
+<center class="copyright"> 
+</center>
+</div>
+</body>
+</html>
+<!-- -->
