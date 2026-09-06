@@ -1,0 +1,98 @@
+Programme Usage "Alternativa3D"
+License argeement
+
+Before usage of the programme please review the terms of the present license
+agreement. Any usage of the programme means total and unconditional consent
+to conditions of the present license agreement.
+
+If you do not totally accept terms of the license agreement you do not have
+the right to use the programme for any purpose.
+
+1. License
+
+The present License agreement ("License") is concluded between you, the user
+("The User"), and Alternativa Game, Ltd., 321-34, Krupskoi st., Perm, Russia,
+who is the possessor of sole rights to the Programme ("the Rightholder").
+The license sets conditions of usage of the computer programme "Alternativa3D"
+by the User.
+
+1.1. By copying the Programme and installing it to the personal computer
+the User expresses total and unconditional consent to conditions of the License.
+
+1.2. Usage of the Programme is permitted only on conditions of the present
+License. If the User does not totally accept terms of the License, the User does
+not possess the right to use the Programme for any purpose. Usage of
+the Programme with violation (nonfulfilment) of any conditions of the License
+is prohibited.
+
+1.3. Usage of the Programme on conditions of the present License for personal
+nonprofit advantage is free of charge. Usage of the Programme on terms and in
+the ways not provided by the present License is permitted only by conclusion
+of a special agreement with the Rightholder at the price set by the Rightholder.
+
+2. Rights to the Programme
+
+Sole property copyrights to use the Programme reserved to the Rightholder. Those
+rights of the Rightholder also include the rights to the trade marks and to
+the information about technologies.
+
+3. Rights of the User
+
+3.1. The Rightholder empowers the User with non-exclusive non-transferable right
+to use the Programme in the following ways:
+
+3.1.1. To use the Programme for the functional purpose specified, to copy
+and set it up at personal computer(s) of the User only for the purpose
+specified. The User is empowered to set up the Programme at unlimited number
+of personal computers.
+
+3.2. The Programme shall be used with indication of the trade name
+"Alternativa3D". The User shall not change the trade name of the Programme,
+change and/or delete the sign of the copyright of the Rightholder.
+
+4. Restrictions
+
+4.1. The User does not possess the right to do or allow to do the following
+actions regarding the Programme: translation, modification, other retreatment
+and other usage of the Programme not directly provided by the present License
+except for usage of the Programme in the volume and in the ways directly
+provided by the present License, legislation of Russia or other countries
+effective at the moment of concession of the present License.
+
+4.2. The user does not possess the right to reproduce and spread the Programme
+for commercial purposes (at a charge) even as a part of collections of software
+products without written consent of the Rightholder. Any usage of the Programme
+by the User which can cause direct or indirect profit-making by the User from
+the Programme is also prohibited.
+
+4.3. The User is not allowed to reverse compile, reverse assemble, decipher
+and do any other actions with the compiled code of the Programme aimed at breach
+of the protection system of the Programme from unauthorized usage and receipt
+of information about implementation of algorithms used in the Programme,
+to create derivative products with usage of the Programme, without written
+consent of the Rightholder.
+
+4.4. When placing any product using the library Alternativa3D in Internet
+for the third parties access, imcluding demo-versions, the User shall place
+a visual label "Powered by Alternativa3D" on this page with a hyperlink
+to the website alternativaplatform.com.
+
+4.5. The present License shall not extend to the subsequent versions
+of the Program and operates only concerning the files of the Program delivered
+with it.
+
+5. Liabilitiy by the License
+
+5.1. The software is provided as is. The Rightholder shall not provide any
+guarantees regarding error-free and uninterrupted work of the Programme,
+compliance of the Programme with specific purposes of the User and also shall
+not provide any guarantee not directly stated by the present License.
+
+5.2. In the maximal breadth allowed by the effective legislation the Rightholder
+as well as his partners shall not be eligible for any direct or indirect
+consequences of any usage of the Programme and/or any damage to the User
+and/or the third parties caused by any usage or disuse of the Programme,
+including possible errors or bugs in the work of the Programme.
+
+5.3. In case of violation of conditions of the present license agreement
+by the User, it can be terminated by the Rightholder without additional notice. 

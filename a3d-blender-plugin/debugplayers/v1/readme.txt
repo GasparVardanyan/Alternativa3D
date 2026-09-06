@@ -1,1 +1,0 @@
-place your a3d model in the same dir as swf and named model.a3d then run the swf

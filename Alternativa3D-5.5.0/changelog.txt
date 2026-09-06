@@ -1,0 +1,105 @@
+Alternativa3D Changelog
+
+5.5.0
+-----
+
+- Added mouse interaction. Objects of the classes Object3D, Surface and Face can now dispatch 3d mouse events
+- Added property View.interactive 
+- Added a new class Sprite3D
+- Added new materials: SpriteTextureMaterial and DevMaterial
+- Properties alpha and blendMode of the SurfaceMaterial class are moved to the base Material class
+- Renamed following methods of the View class and changed their signature:
+    getFacesUnderPoint -> getObjectsUnderPoint
+    getFaceUnderPoint -> getObjectUnderPoint
+- Added controlled clipping in Camera3D
+- Added unload() method in classes Loader3DS and LoaderOBJ
+- Loader3DS and LoaderOBJ can now load transparency maps
+- Added method Scene3D.hasChanges()
+- Added methods for coordinates transformation:
+    Object3D.localToGlobal()
+    Object3D.globalToLocal()
+    View.projectPoint()
+    View.get3DCoords()
+- Method Object3D.getChildByName() can now perform recursive search in all child objects
+- Added property Object3D.transformation, which returns global transformation matrix of an object
+
+- Fixed bug in the method Scene.drawBSP(), which occured when there was a texture material without texture
+- Fixed bug in texture rendering when UV-mapping is degenerated
+- Fixed bug in the method Mesh.removeFace()
+- Fixed bug in controllers, which occured when coordinates of a controller were being set without any object assigned
+- Fixed bug in the methods View.getFaceUnderPoint and View.getFacesUnderPoint, which led to incorrect results when view had transformation
+- Fixed bug in the LoaderOBJ class, which occured when the load() method was called twice
+- Fixed bug in the method ObjectUtils.getClassName(), because of which names of the base Flash classes were incorrect
+
+5.4.1
+-----
+
+- Fixed pivot point parsing bug in Loader3DS
+- Fixed file parsing bug in LoaderOBJ
+- Fixed bug, which caused unnecessary redrawing in some cases
+
+5.4.0
+-----
+
+- Added View getFaceUnderPoint and getFacesUnderPoint methods,
+  which let to get faces under set point
+- Added WalkController and FlyController classes, which let
+  to manage walk and fly modes
+- Added EllipsoidCollider class, which implements ellipsoid-to-geometry
+  collision detection
+- Added Scene3D planeOffsetThreshold parameter - an offset for defining
+  distances between point and splitter planes
+- Added Set.createFromArray method, which creates set from array
+- Added Matrix3D.axisAngleToMatrix method, which forms rotation matrix
+  from axis-angle representation
+- Added Matrix3D getRotations method, which gets rotation angles values
+- Bug fixed in OBJLoader, which showed up during uploading model
+  with textures but without UV-mapping
+- Bug fixed in Mesh cloning, which showed up if surface has no material
+
+5.3.0
+-----
+
+- OBJ-models loader added
+- Mesh setMaterialToAllSurfaces method renamed to cloneMaterialToAllSurfaces
+- Method close added to Loader3DS, manually interrupting uploading 
+- Texture parameters made only for reading
+- Bug fixed - there were no redrawing after faces UV-coordinates update
+- Added indication of missing or incorrect UV-mapping doing texture drawing
+- Optimized memory usage for collision detection
+- Documentation updated
+
+5.2.0
+-----
+
+- Renamed Mesh methods:
+    addVertex -> createVertex
+    addFace -> createFace
+    addSurface -> createSurface
+    addAllFacesToSurface -> moveAllFacesToSurface
+- Face property num renamed to verticesCount
+- Added an ability to exclude objects from collision detection
+  in CameraController (collisionIgnoreSet)
+- Added an ability to handle camera movement start and stop
+  in CameraController (onStartMoving, onStopMoving)
+- Optimized polygons sorting during BSP-building
+- Optimized operation sorting (signals sistem)
+- Added singular mapping check for faces
+- Bugs fixed in 3DS files loader (TD-1063, TD-1073, TD-1074, TD-1083)
+- Corrected geosphere mapping near poles
+- Fixed bug in TextureMaterial cloning (precision didn't copy)
+- Corrected some documentation errors
+
+5.1.0
+-----
+
+- Library was adopted for Flash CS3 integration (added library support
+  classes Alternativa3D, AlternativaTypes, AlternativaUtils)
+- Alternativa3DVersion class removed; library version
+  is in the support class now
+- Added wire drawing in FillMaterial and TextureMaterial
+- Fixed bugs in Cone (UV-mapping and bottom side)
+- Improved CameraController (added acceleration action,
+  changed default key bindings)
+- Removed Alternativa3DLabel class; images are in the "labels" folder now
+- Fixed typos

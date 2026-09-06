@@ -1,1 +1,0 @@
-Bundle-Name: platform.clients.fp11.libraries.Alternativa3D

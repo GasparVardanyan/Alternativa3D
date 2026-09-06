@@ -1,0 +1,25 @@
+# pack-refs with: peeled fully-peeled sorted 
+144fa02a5f6b40b26653676be52382b4df00ed82 refs/heads/davidejones/10yr-anniversary
+3a31025e92f1cd5b4ca2384f5a635d3e6fb0b507 refs/heads/davidejones/280-support
+bfa043c64038b26f4a07c734e8231c89cafb3bac refs/heads/davidejones/361-support
+8aa461f1e647bc057284dfc2565151b4c4abb381 refs/heads/master
+c817c066ed18ee4ed98bec2a0c5727e6f5f8ff16 refs/tags/1.0.0
+f1a25ae10fccfd1ef57ed5100bb692b4af55f6eb refs/tags/1.0.4
+4604db26374c48224be5d776ede4007cb800b7af refs/tags/1.0.5
+435f044d4f55f543fbfe76724fd43b15d3a48279 refs/tags/1.0.7
+e0cd3afa8d931529c30b7545996e791eef8e39e9 refs/tags/1.0.8
+8d29889c588d610353cb5f7d30a1fdd4bb98abc4 refs/tags/1.0.9
+3b251ad148fc10b14737359ab24c64923fe2831a refs/tags/1.1.0
+7bca73625596da4ee3f723e3f2ae4a3bead81e25 refs/tags/1.1.1
+999f058e25c30b0aa18bd400a3f9a33177f5fa94 refs/tags/1.1.2
+^6a6fbc68f3d966b84eb8d9e57edecb1b6e2a5908
+4d5b48fba161254bfae30d38ebd4ddd9a35416e4 refs/tags/1.1.3
+9c311ff4a85f4576e5e1b1ff7640fcdc326414db refs/tags/1.1.4
+84c47eac960f8afbc1feab1389b37c448dc8b2d5 refs/tags/1.1.5
+^f8e9bc8b1da22f7dfefdb07b2c4b9846a92ffc23
+ae4b97e49848daf292c8d05250d334f9beedfb39 refs/tags/1.1.6
+05874bef35fb3ba3e613b7c0f22395b90489dd5e refs/tags/1.1.7
+4a467718dbefcbe8e09e073da68a8d675582ebcb refs/tags/1.1.8
+8269b31cb38497c8e0cb1fe26b5a854df3192732 refs/tags/1.1.9
+30561c93b963f58eaff87563f03a520a4adec6d1 refs/tags/1.2.0
+e982d7c6148dd59bfff7109e3cc31b3efe4621ce refs/tags/1.2.1

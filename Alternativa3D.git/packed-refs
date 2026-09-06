@@ -1,0 +1,24 @@
+# pack-refs with: peeled fully-peeled sorted 
+07bf5de2e4c68a40ed4b39f8346dcf463555d215 refs/heads/8.29.ParserFBX
+661a7202bbdf635838692ee7a54a7b9ea91e2c78 refs/heads/8.30.CullingInGlobal
+4ba1add15faeb48fb581354dc21b993aab2f21a2 refs/heads/8.30.RemoveDrawUnit
+fe2042201b4fb7ceebc13de2a57d8ca11fa70655 refs/heads/8.30.VectorGeometry
+d08989b9b1362555f6333e2ed691e7920711513a refs/heads/8.31.ConstrainedMode
+442c9f6098d3b62aacb79ab997f1f30e139bb9d5 refs/heads/8.31.FixExcludeLights
+f70233d9842fe6fdabf8d445586ccf4f69439771 refs/heads/8.31.HierarchicalZOccluders
+60c0b62763ea30a4a2c78934ac95e9a657b5ff01 refs/heads/8.31.OptimizeGetProgram
+366487d9406112aef011ddad446914f83cd864e1 refs/heads/8.32.SSAOEffect
+e7d86345819b172abac70dff4df15961509411b5 refs/heads/8.33.RenderRefactor
+71e42dbc24b322c6a2b2c8288a88d135df1e9158 refs/heads/8.33.SOControllerSmooth
+f5f890b9aef203096dfd63864f5a978d829a29ca refs/heads/community
+a206a1d57a1017f36aa514e03d5342d42946035a refs/heads/gh-pages
+91927dff32ef131c30a0b48fc44187bc91a639fd refs/heads/master
+26b8a0b05f2984365ea778ffcec37e50f630fea8 refs/tags/8.27.1
+41959d4d6eb9190b7d6f0d5f9cbfe66d668cf265 refs/tags/8.29.0
+^be2d825a46a80e3c3dce72c15e211b0982fa68a9
+64560864ddc8d690278ca8a310cf3f875f81d9f1 refs/tags/8.30.0
+^1892780c1f93d17851101cc81cb06f570a48ec18
+1c82b9995ca7012ddcae2fdfce1820d712410aa5 refs/tags/8.31.0
+^4ea932e9c5be8137b409f6a3eaa2f20bd26ebcde
+c396a50fb00dbdb9b2faaa1c4cad9d7907e0318c refs/tags/8.32.0
+^3434d8a501b1c37f11b2bf5da93b84b4212fd2a0
